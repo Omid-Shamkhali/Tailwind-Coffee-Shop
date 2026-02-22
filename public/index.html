@@ -23,44 +23,35 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
           </symbol>
    
+      
+          
     </svg>
-    <header class=" fixed top-9 right-0 left-0 flex items-center bg-black/50  w-[90%] h-24 px-10 py-5 mx-auto rounded-3xl" >
+    <header class=" fixed top-9 right-0 left-0 flex items-center bg-black/50  w-[90%] h-24 px-10 py-5 mx-auto rounded-3xl backdrop-blur-[6px]" >
         <div class="flex w-full justify-between items-center">
         <!--Logo & Menu-->
-        <nav class="flex gap-x-9 items-center">
+        <nav class="flex gap-x-9 items-center h-14">
              <!--Logo-->
             <div>
                 <img src="images/app-logo.png" alt="Golden Coffe">
             </div>
              <!--Menu-->
-            <ul class="flex gap-x-9 text-xl text-gray-300">
+            <ul class="flex gap-x-9 text-xl text-gray-300 tracking-tightest h-full child:leading-[56px]">
                 <li class="font-DanaMedium text-orange-200">
                      <a href="#">Home</a>
                 </li>
                 <!--has Sub-->
-                <li>
-                     <a href="#">Shop</a> 
+                <li class="relative group">
+                     <a href="#" class="group-hover:text-orange-300 transition-colors">Shop</a> 
                      <!--Sub Menu-->
-                     <ul class="hidden">
-                        <li>
+                     <div class="absolute text-base p-6 w-52 space-y-4 top-full tracking-normal shadow-normal text-zinc-700 dark:text-white border-t-[3px] border-t-orange-300 bg-white rounded-2xl dark:bg-zinc-700 child:inline-block child:transition-colors child-hover:text-orange-300 opacity-0 invisible transition-all group-hover:opacity-100 group-hover:visible ">
                             <a href="#">Special coffee</a>
-                        </li>
-                        <li>
                             <a href="#">Specially at the global level</a>
-                        </li>
-                        <li>
                             <a href="#">First class coffee</a>
-                        </li>
-                        <li>
                             <a href="#">Commercial compounds</a>
-                        </li>
-                        <li>
                             <a href="#">Coffee capsule</a>
-                        </li>
-                        <li>
                             <a href="#">Brazilian Zino Coffee</a>
-                        </li>
-                    </ul>
+                       
+                     </div>
                 </li>
                 <li>
                      <a href="#">Dictionary</a> 
@@ -82,25 +73,34 @@
             <div class="flex  gap-x-5">
                 <!-- Cart -->
                 <div>
-                 <svg class="w-8 h-8">
-                    <use xlink:href="#shopping-cart"></use>
-                 </svg>
+                     <!-- Cart Icon hover-->
+                    <div class="py-3">
+                        <svg class="w-8 h-8">
+                            <use xlink:href="#shopping-cart"></use>
+                         </svg>
+                          <!-- Cart box -->
+                         <div></div>
+                    </div>
             </div>
             <!--   Theme Switch Btn-->
-            <div>
-                <svg class="w-8 h-8">
+            <div class="py-3 cursor-pointer" id="toggle-theme">
+                <svg class="w-8 h-8 inline-block dark:hidden">
                       <use xlink:href="#Moon"></use> 
                 </svg>
+                <svg class="w-8 h-8 hidden dark:inline-block">
+                    <use xlink:href="#Sun"></use> 
+              </svg>
             </div>
             </div>
               <!--Divide-->
               <span class="block w-px h-14 bg-white/20"></span>
             <!--Login Link-->
-            <a href="#" class="flex items-center gap-x-2"></a>
+            <a href="#" class="flex items-center gap-x-2.5 tracking-tightest">
             <svg class="w-8 h-8 rotate-180">
                 <use xlink:href="#Arrow"></use>
             </svg>
-            Registration | login
+           <span>Registration | login</span> 
+        </a>
         </div>
     </div>
     </header>
