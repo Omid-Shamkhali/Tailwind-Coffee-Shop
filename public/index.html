@@ -22,6 +22,11 @@
           <symbol id="Arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
           </symbol>
+          <symbol id="ArrowLeft" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </symbol>
+        
+          
    
       
           
@@ -70,17 +75,51 @@
         <!--Cart & Theme Toggle , Login Link-->
         <div class="flex gap-x-5 text-xl items-center text-orange-200">
             <!--Cart Icon & Theme Switch Btn-->
-            <div class="flex  gap-x-5">
+            <div class="flex items-center gap-x-5">
                 <!-- Cart -->
-                <div>
+                <div class="relative group ">
                      <!-- Cart Icon hover-->
-                    <div class="py-3">
+                    <div class="py-3 cursor-pointer ">
+                    
                         <svg class="w-8 h-8">
                             <use xlink:href="#shopping-cart"></use>
                          </svg>
+                         
+                       
                           <!-- Cart box -->
-                         <div></div>
-                    </div>
+                          <div class="absolute top-full right-0 opacity-0 invisible  group-hover:opacity-100 group-hover:visible w-[400px] p-5 bg-white dark:bg-zinc-700 border-t-[3px] border-t-orange-300 shadow-normal rounded-2xl transition-all">
+                             <!-- Cart header -->
+                            <div class="flex justify-between items-center font-DanaMedium text-xs ">
+                                <span class="text-gray-300 ">one item</span>
+                                <a href="#" class="flex items-center text-orange-300"> 
+                                  
+                                    View Basket
+                                    <svg class="w-4 h-4">
+                                        <use xlink:href="#ArrowLeft"></use>
+                                    </svg>
+                                  
+                                </a>
+                                 <!-- Cart body -->
+                                    <div>
+                                        <img class="w-10 h-10"src="images/products/p1.png" alt="product image">
+                                        <div>
+                                            <h4 class="font-DanaMedium text-zinc-700 dark:text-white">cofee 500gr</h4>
+                                            <div>
+                                                <span>14 euro</span>
+                                                <div>16  </div>
+                                                <span>euro</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 <!-- Cart body -->
+                              
+                            </div>
+                          
+                          </div>
+                        </div>
+                         
+                        
+                    
             </div>
             <!--   Theme Switch Btn-->
             <div class="py-3 cursor-pointer" id="toggle-theme">
