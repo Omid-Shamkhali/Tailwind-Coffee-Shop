@@ -243,14 +243,14 @@
     <div class="flex md:hidden items-center bg-white dark:bg-zinc-700 px-4  justify-between  h-16">
          <!-- Nav icon-->
         <div>
-         <svg class="w-6 h-6 mt-3 text-zinc-700 dark:text-white">
+         <svg class="bar-btn w-6 h-6 mt-3 text-zinc-700 dark:text-white">
              <use href="#bar3"></use>
          </svg>
         </div>
 
-          <!--mobile menu-->
-       <div class=" fixed top-0 bottom-0 left-0 w-64 min-h-screen bg-white dark:bg-zinc-700 z-20 pt-3 px-4">
-        <!-- logo menu mobile-->
+          <!-- Nav (mobile menu)-->
+       <div id="mobile-menu" class="fixed top-0 bottom-0 -left-64 w-64 min-h-screen bg-white dark:bg-zinc-700 z-20 pt-3 px-4 transition-all overflow-y-auto">
+        <!-- Nav Header (logo menu mobile)-->
         <div class="flex justify-between pb-5 mb-6 items-center  border-b  border-b-gray-100 dark:border-b-white/10">
             <div class="flex">
                 <svg class="w-[60px] h-10" >
@@ -261,29 +261,45 @@
                 </svg>
             </div>
             
-                <!--close-->
-                    <svg class="w-5 h-5  text-zinc-600 dark:text-white">
+                <!--X icon-->
+                    <svg class=" close-menu w-5 h-5  text-zinc-600 dark:text-white">
                         <use href="#x-mark"></use>
                     </svg>
         </div>
-        <!--  mobile nav menus-->
-            <div class="flex flex-col items-start gap-y-6 pt-8 mt-8 px-2.5 border-b  border-b-gray-100 dark:border-b-white/10 text-orange-300 space-y-6">
-                <ul class="flex flex-col gap-x-5 lg:gap-x-9 text-xl text-gray-300 tracking-tightest h-full child:leading-[56px]">
-                    <li class="font-DanaMedium text-orange-200">
-                         <a href="#" class="flex text-base text-orange-300">
-                            <svg class="w-5 h-5" >
-                                <use href="#home"></use>
-                            </svg>
-                            Home</a>
-                    </li>
+        <!--  Nav Menu (mobile nav menus)-->
+         
+                <div class="flex h-10 items-center text-orange-300 bg-orange-200/20 rounded-md  pl-2.5 mb-4">
+                    <a href="#" class="flex items-center gap-x-2 text-orange-300  ">
+                       <svg class="w-5 h-5" >
+                           <use href="#home"></use>
+                       </svg>
+                       Home</a>
+                    </div>
+                <ul class="space-y-6 text-zinc-600 dark:text-white  child:pl-2.5 ">
+                 
                     <!--has Sub-->
-                    <li class="relative group">
-                         <a href="#" class="flex group-hover:text-orange-300 transition-colors ">   
-                            Shop
-                        </a> 
+                    
+                    <li  >
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="flex  items-center gap-x-2  ">  
+                                <svg class="w-4 h-4" >
+                                    <use href="#shopping-bag"></use>
+                                </svg>
+                                Shop                 
+                            </a> 
+                            <span >
+                                <svg id="submenu-btn" class="w-4 h-4  cursor-pointer rotate-180 " >
+                                    <use href="#chevron-down"></use>
+                                </svg>
+                            </span>
+                        </div>
+                         
+                        
+                        
                          <!--Sub Menu-->
-                         <div class="absolute text-base p-6 w-52 space-y-4 top-full tracking-normal shadow-normal text-zinc-700 dark:text-white border-t-[3px] border-t-orange-300 bg-white rounded-2xl dark:bg-zinc-700 child:inline-block child:transition-colors child-hover:text-orange-300 opacity-0 invisible transition-all delay-75 ">
-                                <a href="#">Special coffee</a>
+                        
+                         <div  class="submenu hidden">
+                                <a href="#" >Special coffee</a>
                                 <a href="#">Specially at the global level</a>
                                 <a href="#">First class coffee</a>
                                 <a href="#">Commercial compounds</a>
@@ -293,16 +309,32 @@
                          </div>
                     </li>
                     <li>
-                         <a href="#">Dictionary</a> 
+                         <a href="#" class="flex  items-center gap-x-2">
+                            <svg class="w-5 h-5" >
+                                <use href="#chat"></use>
+                            </svg>
+                            Dictionary</a> 
                     </li>
                     <li>
-                         <a href="#">Blog</a> 
+                         <a href="#" class="flex  items-center gap-x-2">
+                            <svg class="w-5 h-5" >
+                                <use href="#document-text"></use>
+                            </svg>
+                            Blog</a> 
                     </li>
                     <li>
-                         <a href="#">About us</a> 
+                         <a href="#" class="flex  items-center gap-x-2">
+                            <svg class="w-5 h-5" >
+                                <use href="#about"></use>
+                            </svg>
+                            About us</a> 
                     </li>
                     <li>
-                         <a href="#">Contact us</a>
+                         <a href="#" class="flex  items-center gap-x-2">
+                            <svg class="w-5 h-5" >
+                                <use href="#phone"></use>
+                            </svg>
+                            Contact us</a>
                     </li>
                 </ul>
                 
@@ -311,8 +343,8 @@
                 
                 
                 
-                
-                
+                <div class="flex flex-col items-start gap-y-6 pt-8 mt-8 px-2.5 border-b  border-b-gray-100 dark:border-b-white/10 text-orange-300 space-y-6 py-8">
+                <!--NAV footer mobile-->
                 <a h ref="#" class="inline-flex items-center gap-x-2  cursor-pointer">
                     <svg class="w-5 h-5 rotate-180">
                         <use xlink:href="#Arrow"></use>
@@ -358,7 +390,7 @@
      </div>
 
      
-    <div class="overlay fixed inset-0 w-full h-full  bg-black/40 z-10 md:hidden"></div>
+    <div class="overlay hidden fixed inset-0 w-full h-full  bg-black/40 z-10 md:hidden transition-all"></div>
   <script src="scripts/app.js"></script>
 </body>
 </html></html>
