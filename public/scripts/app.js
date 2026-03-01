@@ -5,6 +5,9 @@ const menubarBtn=document.querySelector('.bar-btn')
 const mobileNav=document.querySelector('#mobile-menu')
 const closeMneuBtn=document.querySelector('.close-menu')
 const overlayItem=document.querySelector('.overlay')
+const closeBtnBasket=document.querySelector('.close-basket')
+const mobileBasketTag=document.querySelector('.mobile-basket')
+const mobileShoppingCartBtn=document.querySelector('.mobile-shopping-cart')
 
 
 toggleThemeBtn.forEach(btn=>{
@@ -44,4 +47,20 @@ closeMneuBtn.addEventListener('click',()=>{
     mobileNav.classList.toggle('-left-64')
     overlayItem.classList.toggle('hidden')
   
+})
+
+closeBtnBasket.addEventListener('click',()=>{
+    mobileBasketTag.classList.toggle('-right-64')
+    mobileBasketTag.classList.toggle('right-0')
+    overlayItem.classList.toggle('hidden')
+   
+   
+ 
+  
+})
+mobileShoppingCartBtn.addEventListener('click',()=>{
+    mobileBasketTag.classList.toggle('right-0')
+    mobileBasketTag.classList.toggle('-right-64')
+    overlayItem.classList.toggle('hidden')
+   
 })
