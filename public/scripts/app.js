@@ -38,14 +38,14 @@ toggleSubmenuBtn.addEventListener('click',(e)=>{
 menubarBtn.addEventListener('click',()=>{
     mobileNav.classList.toggle('-left-64')
   mobileNav.classList.toggle('left-0')
-  overlayItem.classList.toggle('hidden')
+ 
 })
 
 
 closeMneuBtn.addEventListener('click',()=>{
     mobileNav.classList.toggle('left-0')
     mobileNav.classList.toggle('-left-64')
-    overlayItem.classList.toggle('hidden')
+  
   
 })
 
@@ -53,6 +53,7 @@ closeBtnBasket.addEventListener('click',()=>{
     mobileBasketTag.classList.toggle('-right-64')
     mobileBasketTag.classList.toggle('right-0')
     overlayItem.classList.toggle('hidden')
+    
    
    
  
