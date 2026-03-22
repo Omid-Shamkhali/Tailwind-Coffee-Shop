@@ -1,14 +1,23 @@
-## 🚀 Project Status
+# ☕ Tailwind Coffee Shop
 
-⚠️ This project is a work in progress... ⚠️ 
-
-The layout and core components are currently being implemented.
-
-Stay tuned for updates!
+A modern and responsive coffee shop website built with Tailwind CSS.
 
 
-
-
-
-## 🚀 Live Demo ⚠️
+## 🚀 Live Demo 
 [![Demo](https://img.shields.io/badge/Demo-Live-brightgreen)](https://omid-shamkhali.github.io/Tailwind-Coffee-Shop/public/)
+
+## ✨ Features
+- Responsive design (mobile-first)
+- Modern UI with Tailwind CSS
+- Smooth layout and clean structure
+
+## 🛠️ Technologies Used
+- HTML5
+- Tailwind CSS
+- JavaScript
+
+
+
+
+
+
