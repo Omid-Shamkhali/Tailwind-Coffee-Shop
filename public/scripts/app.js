@@ -35,19 +35,31 @@ toggleSubmenuBtn.addEventListener('click',(e)=>{
     }
 })
 
-menubarBtn.addEventListener('click',()=>{
-    mobileNav.classList.toggle('-left-64')
-  mobileNav.classList.toggle('left-0')
- 
-})
+const menu = mobileNav;
+
+menubarBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  menu.classList.toggle('-left-64');
+  menu.classList.toggle('left-0');
+});
+
+closeMneuBtn.addEventListener('click', () => {
+  menu.classList.toggle('left-0');
+  menu.classList.toggle('-left-64');
+});
 
 
-closeMneuBtn.addEventListener('click',()=>{
-    mobileNav.classList.toggle('left-0')
-    mobileNav.classList.toggle('-left-64')
-  
-  
-})
+menu.addEventListener('click', (e) => {
+  e.stopPropagation();
+});
+
+// close menu by click in outside
+document.addEventListener('click', () => {
+  if (menu.classList.contains('left-0')) {
+    menu.classList.remove('left-0');
+    menu.classList.add('-left-64');
+  }
+});
 
 closeBtnBasket.addEventListener('click',()=>{
     mobileBasketTag.classList.toggle('-right-64')
