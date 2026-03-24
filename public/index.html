@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="./styles/app.css">
   <link rel="icon" href="images/fav-icon.png" type="image/png">
 </head>
-<body class="font-Dana bg-gray-100 dark:bg-zinc-800">
+<body class="font-Dana bg-gray-100 dark:bg-zinc-800 ">
   <!--All app icons-->
   <svg class="hidden">
     <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -309,7 +309,8 @@
       </svg>
     </div>
     <!-- Nav (mobile menu)-->
-    <div id="mobile-menu" class="fixed top-0 bottom-0 -left-64 w-64 min-h-screen bg-white dark:bg-zinc-700 pt-3 px-4 transition-all overflow-y-auto z-20">
+ 
+    <div id="mobile-menu" class="fixed top-0 bottom-0 -left-64 w-64 min-h-screen bg-white dark:bg-zinc-700 pt-3 px-4 transition-all overflow-y-auto z-[9999]">
       <!-- Nav Header (logo menu mobile)-->
       <div class="flex justify-between pb-5 mb-6 items-center border-b border-b-gray-100 dark:border-b-white/10">
         <div class="flex">
@@ -508,7 +509,7 @@
       <!--------------------------------------------------------------------------------------------------------------------->
       <div
         class="flex flex-col w-[172px] h-[273px] sm:w-[300px] sm:h-[467px] bg-white rounded-2xl m-3 sm:m-2 md:m-10 lg:m-5 xl:m-2 2xl:m-5 shadow-[0px_1px_10px_0px_rgba(0,0,0,0.1)] cursor-pointer dark:bg-zinc-700">
-        <div class="flex relative">
+        <div class="flex">
           <img src="images/products/p1.png" alt="product"
             class="w-[128px] h-[128px] mt-2 sm:w-[260px] sm:h-[260px] m-5">
           <div
@@ -524,7 +525,7 @@
             <span class="text-teal-600 text-base sm:text-xl font-DanaMedium">15</span>
             <span class="text-teal-600 text-xs sm:text-sm ml-1">Euro</span>
           </div>
-          <div class="relative">
+          <div class="">
             <span class="text-gray-400 text-base sm:text-xl">18</span>
             <span class="text-gray-400 text-xs sm:text-sm ml-1">Euro</span>
             <span class="absolute left-0 right-0 top-1/2 h-[1px] bg-red-500"></span>
@@ -532,16 +533,16 @@
         </div>
         <div class="flex justify-between items-center h-[24px] m-2 sm:m-5">
           <div
-            class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800">
-            <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400 ">
-              <use href="#shopping-cart"></use>
-            </svg>
-          </div>
-          <div class="flex">
-            <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px]">
-              <use href="#right-left"></use>
-            </svg>
-          </div>
+          class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800 hover:bg-teal-600 group dark:hover:bg-teal-500">
+          <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400 group-hover:text-white ">
+            <use href="#shopping-cart"></use>
+          </svg>
+        </div>
+        <div class="flex">
+          <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px] hover:text-teal-600 dark:hover:text-teal-500">
+            <use href="#right-left"></use>
+          </svg>
+        </div>
           <div class="flex">
             <svg class="w-4 sm:w-6 text-orange-300">
               <use href="#star"></use>
@@ -580,16 +581,16 @@
         </div>
         <div class="flex justify-between items-center h-[24px] m-2 sm:m-5">
           <div
-            class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800">
-            <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400 ">
-              <use href="#shopping-cart"></use>
-            </svg>
-          </div>
-          <div class="flex">
-            <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px]">
-              <use href="#right-left"></use>
-            </svg>
-          </div>
+          class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800 hover:bg-teal-600 group dark:hover:bg-teal-500">
+          <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400 group-hover:text-white">
+            <use href="#shopping-cart"></use>
+          </svg>
+        </div>
+        <div class="flex">
+          <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px] hover:text-teal-600 dark:hover:text-teal-500">
+            <use href="#right-left"></use>
+          </svg>
+        </div>
           <div class="flex">
             <svg class="w-4 sm:w-6 text-orange-300">
               <use href="#star"></use>
@@ -612,7 +613,7 @@
       <!--------------------------------------------------------------------------------------------------------------------->
       <div
         class="flex flex-col w-[172px] h-[273px] sm:w-[300px] sm:h-[467px] bg-white rounded-2xl  m-3 sm:m-2 md:m-10 lg:m-5 xl:m-2 2xl:m-5 shadow-[0px_1px_10px_0px_rgba(0,0,0,0.1)] cursor-pointer dark:bg-zinc-700">
-        <div class="flex relative">
+        <div class="flex">
           <img src="images/products/p3.png" alt="product"
             class="w-[128px] h-[128px] mt-2 sm:w-[260px] sm:h-[260px] m-5">
           <div
@@ -636,16 +637,16 @@
         </div>
         <div class="flex justify-between items-center h-[24px] m-2 sm:m-5">
           <div
-            class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800">
-            <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400 ">
-              <use href="#shopping-cart"></use>
-            </svg>
-          </div>
-          <div class="flex">
-            <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px]">
-              <use href="#right-left"></use>
-            </svg>
-          </div>
+          class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800 hover:bg-teal-600 group dark:hover:bg-teal-500">
+          <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400 group-hover:text-white">
+            <use href="#shopping-cart"></use>
+          </svg>
+        </div>
+        <div class="flex">
+          <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px] hover:text-teal-600 dark:hover:text-teal-500">
+            <use href="#right-left"></use>
+          </svg>
+        </div>
           <div class="flex">
             <svg class="w-4 sm:w-6 text-orange-300">
               <use href="#star"></use>
@@ -683,16 +684,16 @@
         </div>
         <div class="flex justify-between items-center h-[24px] m-2 sm:m-5">
           <div
-            class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800">
-            <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400 ">
-              <use href="#shopping-cart"></use>
-            </svg>
-          </div>
-          <div class="flex">
-            <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px]">
-              <use href="#right-left"></use>
-            </svg>
-          </div>
+          class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800 hover:bg-teal-600 group dark:hover:bg-teal-500">
+          <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400 group-hover:text-white">
+            <use href="#shopping-cart"></use>
+          </svg>
+        </div>
+        <div class="flex">
+          <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px] hover:text-teal-600 dark:hover:text-teal-500">
+            <use href="#right-left"></use>
+          </svg>
+        </div>
           <div class="flex">
             <svg class="w-4 sm:w-6 text-orange-300">
               <use href="#star"></use>
@@ -715,7 +716,7 @@
       <!--------------------------------------------------------------------------------------------------------------------->
       <div
         class="flex flex-col w-[172px] h-[273px] sm:w-[300px] sm:h-[467px] bg-white rounded-2xl m-3 sm:m-2 md:m-10 lg:m-5 xl:m-2 2xl:m-5 shadow-[0px_1px_10px_0px_rgba(0,0,0,0.1)] cursor-pointer dark:bg-zinc-700">
-        <div class="flex relative">
+        <div class="flex">
           <img src="images/products/p3.png" alt="product"
             class="w-[128px] h-[128px] mt-2 sm:w-[260px] sm:h-[260px] m-5">
           <div
@@ -739,16 +740,16 @@
         </div>
         <div class="flex justify-between items-center h-[24px] m-2 sm:m-5">
           <div
-            class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800">
-            <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400 ">
-              <use href="#shopping-cart"></use>
-            </svg>
-          </div>
-          <div class="flex">
-            <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px]">
-              <use href="#right-left"></use>
-            </svg>
-          </div>
+          class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800 hover:bg-teal-600 group dark:hover:bg-teal-500">
+          <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400 group-hover:text-white">
+            <use href="#shopping-cart"></use>
+          </svg>
+        </div>
+        <div class="flex">
+          <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px] hover:text-teal-600 dark:hover:text-teal-500">
+            <use href="#right-left"></use>
+          </svg>
+        </div>
           <div class="flex">
             <svg class="w-4 sm:w-6 text-orange-300">
               <use href="#star"></use>
@@ -787,13 +788,13 @@
         </div>
         <div class="flex justify-between items-center h-[24px] m-2 sm:m-5">
           <div
-            class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800">
-            <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400 ">
+            class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800 hover:bg-teal-600 group dark:hover:bg-teal-500">
+            <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400 group-hover:text-white">
               <use href="#shopping-cart"></use>
             </svg>
           </div>
           <div class="flex">
-            <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px]">
+            <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px] hover:text-teal-600 dark:hover:text-teal-500">
               <use href="#right-left"></use>
             </svg>
           </div>
@@ -835,16 +836,16 @@
         </div>
         <div class="flex justify-between items-center h-[24px] m-2 sm:m-5">
           <div
-            class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800">
-            <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400">
-              <use href="#shopping-cart"></use>
-            </svg>
-          </div>
-          <div class="flex">
-            <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px]">
-              <use href="#right-left"></use>
-            </svg>
-          </div>
+          class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800 hover:bg-teal-600 group dark:hover:bg-teal-500 ">
+          <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400 group-hover:text-white">
+            <use href="#shopping-cart"></use>
+          </svg>
+        </div>
+        <div class="flex">
+          <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px] hover:text-teal-600 dark:hover:text-teal-500">
+            <use href="#right-left"></use>
+          </svg>
+        </div>
           <div class="flex">
             <svg class="w-4 sm:w-6 text-orange-300">
               <use href="#star"></use>
@@ -881,13 +882,13 @@
         </div>
         <div class="flex justify-between items-center h-[24px] m-2 sm:m-5">
           <div
-            class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800">
-            <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400">
+            class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800 hover:bg-teal-600 group dark:hover:bg-teal-500">
+            <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400 group-hover:text-white">
               <use href="#shopping-cart"></use>
             </svg>
           </div>
           <div class="flex">
-            <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px]">
+            <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px] hover:text-teal-600 dark:hover:text-teal-500">
               <use href="#right-left"></use>
             </svg>
           </div>
@@ -1023,16 +1024,16 @@
         </div>
         <div class="flex justify-between items-center h-[24px] m-2 sm:m-5">
           <div
-            class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800">
-            <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400 ">
-              <use href="#shopping-cart"></use>
-            </svg>
-          </div>
-          <div class="flex">
-            <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px]">
-              <use href="#right-left"></use>
-            </svg>
-          </div>
+          class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800 hover:bg-teal-600 group dark:hover:bg-teal-500">
+          <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400 group-hover:text-white">
+            <use href="#shopping-cart"></use>
+          </svg>
+        </div>
+        <div class="flex">
+          <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px] hover:text-teal-600 dark:hover:text-teal-500">
+            <use href="#right-left"></use>
+          </svg>
+        </div>
           <div class="flex">
             <svg class="w-4 sm:w-6 text-orange-300">
               <use href="#star"></use>
@@ -1079,16 +1080,16 @@
         </div>
         <div class="flex justify-between items-center h-[24px] m-2 sm:m-5">
           <div
-            class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800">
-            <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400">
-              <use href="#shopping-cart"></use>
-            </svg>
-          </div>
-          <div class="flex">
-            <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px]">
-              <use href="#right-left"></use>
-            </svg>
-          </div>
+          class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800 hover:bg-teal-600 group dark:hover:bg-teal-500">
+          <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400 group-hover:text-white">
+            <use href="#shopping-cart"></use>
+          </svg>
+        </div>
+        <div class="flex">
+          <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px] hover:text-teal-600 dark:hover:text-teal-500">
+            <use href="#right-left"></use>
+          </svg>
+        </div>
           <div class="flex">
             <svg class="w-4 sm:w-6 text-orange-300">
               <use href="#star"></use>
@@ -1125,13 +1126,13 @@
         </div>
         <div class="flex justify-between items-center h-[24px] m-2 sm:m-5">
           <div
-            class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800">
-            <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400 ">
+            class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800 hover:bg-teal-600 group dark:hover:bg-teal-500">
+            <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400 group-hover:text-white">
               <use href="#shopping-cart"></use>
             </svg>
           </div>
           <div class="flex">
-            <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px]">
+            <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px] hover:text-teal-600 dark:hover:text-teal-500">
               <use href="#right-left"></use>
             </svg>
           </div>
@@ -1173,16 +1174,16 @@
         </div>
         <div class="flex justify-between items-center h-[24px] m-2 sm:m-5">
           <div
-            class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800">
-            <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400">
-              <use href="#shopping-cart"></use>
-            </svg>
-          </div>
-          <div class="flex">
-            <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px]">
-              <use href="#right-left"></use>
-            </svg>
-          </div>
+          class="flex w-[26px] h-[26px] sm:w-9 sm:h-9 rounded-full justify-center items-center bg-gray-100 dark:bg-zinc-800 hover:bg-teal-600 group dark:hover:bg-teal-500">
+          <svg class="w-[12.93px] h-3 sm:w-[17.78px] sm:h-[16.5px] text-gray-400 group-hover:text-white">
+            <use href="#shopping-cart"></use>
+          </svg>
+        </div>
+        <div class="flex">
+          <svg class="w-4 h-4 sm:w-[18px] sm:h-[18px] text-gray-400 sm:mr-[57px] hover:text-teal-600 dark:hover:text-teal-500">
+            <use href="#right-left"></use>
+          </svg>
+        </div>
           <div class="flex">
             <svg class="w-4 sm:w-6 text-orange-300">
               <use href="#star"></use>

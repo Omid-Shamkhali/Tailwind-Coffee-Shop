@@ -46,9 +46,10 @@ menubarBtn.addEventListener('click', (e) => {
 closeMneuBtn.addEventListener('click', () => {
   menu.classList.toggle('left-0');
   menu.classList.toggle('-left-64');
+ 
 });
 
-
+//===============================================
 menu.addEventListener('click', (e) => {
   e.stopPropagation();
 });
@@ -61,15 +62,13 @@ document.addEventListener('click', () => {
   }
 });
 
+//-----------------------------------------------------------
+
 closeBtnBasket.addEventListener('click',()=>{
     mobileBasketTag.classList.toggle('-right-64')
     mobileBasketTag.classList.toggle('right-0')
     overlayItem.classList.toggle('hidden')
-    
-   
-   
- 
-  
+
 })
 mobileShoppingCartBtn.addEventListener('click',()=>{
     mobileBasketTag.classList.toggle('right-0')
