@@ -168,9 +168,17 @@
     <symbol id="Arrow-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
     </symbol>
-    <symbol id="Arrow-right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <symbol id="Arrow-right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
     </symbol>
+    <symbol id="shopping-bag" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+    </symbol>
+    <symbol id="sitting" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+    </symbol>
+    
     
     
     
@@ -178,8 +186,7 @@
 
   </svg>
   <!-------------------------------------------------------------------------------------------------------------->
-  <header
-    class="fixed hidden md:flex top-9 right-0 left-0 items-center bg-black/50 w-[98%] lg:w-[90%] h-24 px-5 lg:px-10 py-5 mx-auto rounded-3xl backdrop-blur-[6px] z-20">
+  <header class="fixed hidden md:flex top-9 right-0 left-0 items-center bg-black/50 w-[98%] lg:w-[90%] h-24 px-5 lg:px-10 py-5 mx-auto rounded-3xl backdrop-blur-[6px] z-20">
     <div class="flex w-full justify-between items-center">
       <!--Logo & Menu-->
       <nav class="flex gap-x-5 lg:gap-x-9 items-center h-14">
@@ -196,8 +203,7 @@
           <li class="relative group">
             <a href="#" class="group-hover:text-orange-300 transition-colors">Shop</a>
             <!--Sub Menu-->
-            <div
-              class="absolute text-base p-6 w-52 space-y-4 top-full tracking-normal shadow-normal text-zinc-700 dark:text-white border-t-[3px] border-t-orange-300 bg-white rounded-2xl dark:bg-zinc-700 child:inline-block child:transition-colors child-hover:text-orange-300 opacity-0 invisible transition-all delay-75 group-hover:opacity-100 group-hover:visible ">
+            <div class="absolute text-base p-6 w-52 space-y-4 top-full tracking-normal shadow-normal text-zinc-700 dark:text-white border-t-[3px] border-t-orange-300 bg-white rounded-2xl dark:bg-zinc-700 child:inline-block child:transition-colors child-hover:text-orange-300 opacity-0 invisible transition-all delay-75 group-hover:opacity-100 group-hover:visible ">
               <a href="#">Special coffee</a>
               <a href="#">Specially at the global level</a>
               <a href="#">First class coffee</a>
@@ -224,8 +230,7 @@
                 <use xlink:href="#shopping-cart"></use>
               </svg>
               <!-- Cart box -->
-              <div
-                class="absolute top-full right-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible w-[400px] p-5 bg-white dark:bg-zinc-700 border-t-[3px] border-t-orange-300 shadow-normal rounded-2xl transition-all delay-75">
+              <div class="absolute top-full right-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible w-[400px] p-5 bg-white dark:bg-zinc-700 border-t-[3px] border-t-orange-300 shadow-normal rounded-2xl transition-all delay-75">
                 <!-- Cart header -->
                 <div class="flex justify-between items-center font-DanaMedium text-xs">
                   <span class="text-gray-300 ">one item</span>
@@ -237,8 +242,7 @@
                   </a>
                 </div>
                 <!-- Cart body -->
-                <div
-                  class="pb-1 border-b border-b-gray-300 dark:border-b-white/10 divide-y divide-gray-100 dark:divide-white/10 child:py-5">
+                <div class="pb-1 border-b border-b-gray-300 dark:border-b-white/10 divide-y divide-gray-100 dark:divide-white/10 child:py-5">
                   <div class="flex gap-x-2.5 ">
                     <img class="w-[120px] h-[120px]" src="images/products/p1.png" alt="product image">
                     <div class="flex flex-col justify-between">
@@ -293,12 +297,48 @@
         <!--Divide-->
         <span class="block w-px h-14 bg-white/20"></span>
         <!--Login Link-->
-        <a href="#" class="flex items-center gap-x-2.5 tracking-tightest">
-          <svg class="w-8 h-8 rotate-180">
-            <use xlink:href="#Arrow"></use>
-          </svg>
-          <span class="hidden xl:inline-block">Registration | login</span>
-        </a>
+         <!-- <a href="#" class="flex items-center gap-x-2.5 tracking-tightest">
+            <svg class="w-8 h-8 rotate-180">
+              <use xlink:href="#Arrow"></use>
+            </svg>
+            <span class="hidden xl:inline-block">Registration | login</span>
+          </a>-->
+          <ul>
+            <li class="relative group">
+              <a href="#" class="flex group-hover:text-orange-300 transition-colors">
+                <svg class="flex w-8 h-8 rotate-180">
+                  <use xlink:href="#Arrow"></use>
+                </svg>
+                Registration | login</a>
+              <!--Sub Menu-->
+              <div class="flex flex-col absolute text-base p-5 w-52 space-y-4 top-full tracking-normal shadow-normal text-zinc-700 dark:text-white border-t-[3px] mt-4 border-t-orange-300 bg-white rounded-2xl dark:bg-zinc-700
+              child:flex child:items-center child:gap-2 child:transition-colors child-hover:text-orange-300
+              opacity-0 invisible transition-all delay-75 group-hover:opacity-100 group-hover:visible">
+              
+                <a href="#">
+                  <svg class="w-4 h-4"><use href="#shopping-bag"></use></svg>
+                  My orders
+                </a>
+              
+                <a href="#">
+                  <svg class="w-4 h-4"><use href="#Email-box"></use></svg>
+                  Message List
+                </a>
+              
+                <a href="#" class="">
+                  <svg class="w-4 h-4"><use href="#sitting"></use></svg>
+                  Account Information
+                </a>
+              <span class="border-t border-t-gray-300 dark:border-t-white/10 "></span>
+                <a href="#">
+                  <svg class="w-4 h-4"><use href="#Arrow"></use></svg>
+                  Sign out
+                </a>
+              </div>
+            </li>
+          </ul>
+        
+         
       </div>
     </div>
   </header>
@@ -1427,7 +1467,7 @@
             <p> Germany-Hamburg,heineweg </p>    
           </div>
           <div class="flex mt-5">
-            <svg class="w-4 h-4 mt-1 mr-2 text-orange-300"><use href="#Email-box"></use></svg>
+            <svg class="w-4 h-4 mt-1 mr-2 text-orange-300"><use href="#"></use></svg>
             <span class="flex gap-x-5 text-orange-300">info@coffe.com</span>
             <svg class="w-4 h-4 mt-1 ml-5 mr-2"><use href="#phone"></use></svg>
             <span>0049-175001...</span>

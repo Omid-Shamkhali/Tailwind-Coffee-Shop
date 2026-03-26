@@ -9,18 +9,19 @@ const closeBtnBasket=document.querySelector('.close-basket')
 const mobileBasketTag=document.querySelector('.mobile-basket')
 const mobileShoppingCartBtn=document.querySelector('.mobile-shopping-cart')
 
+toggleThemeBtn.forEach(btn => {
+  btn.addEventListener("click", () => {
+      const isDark = localStorage.getItem("theme") === "dark";
 
-toggleThemeBtn.forEach(btn=>{
-    btn.addEventListener("click" , () => {
-        if (localStorage.theme === "dark"){
-            document.documentElement.classList.remove("dark");
-            localStorage.theme = "light";
-        } else {
-            document.documentElement.classList.add("dark");
-            localStorage.setItem("theme" , "dark");
-        }
-    })
-})
+      if (isDark) {
+          document.documentElement.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+      } else {
+          document.documentElement.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+      }
+  });
+});
 
 toggleSubmenuBtn.addEventListener('click',(e)=>{
     
