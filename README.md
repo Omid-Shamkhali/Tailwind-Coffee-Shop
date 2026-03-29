@@ -1,5 +1,5 @@
 # ☕ Tailwind Coffee Shop
-
+⚠️ This project is currently under development and some features may be incomplete.
 A modern and responsive coffee shop website built with Tailwind CSS.
 
 
