@@ -185,6 +185,10 @@
     <symbol id="down" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
     </symbol>
+    <symbol id="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+    </symbol>
+      
       
       
     
@@ -692,17 +696,121 @@
     <span>Flavour Name:</span>
     <span class="font-semibold">Crema</span>
   </div>
+  <span class="flex mt-3 font-bold text-lg">Diet type</span>
+  <!---->
+  <div class="flex child:mr-2 mb-3">
+    <div class="flex w-auto h-[28px] bg-gray-200 items-center justify-center ">
+        <svg class="w-4 h-4 m-2"><use href="#check"></use></svg>
+        <span class="flex mr-3">Plant Based</span>
+    </div>
+    <div class="flex w-auto h-[28px] bg-gray-200 items-center justify-center">
+        <svg class="w-4 h-4 m-2"><use href="#check"></use></svg>
+        <span class="flex mr-3">Vegetarian</span>
+    </div>
+    <div class="flex w-auto h-[28px] bg-gray-200 items-center justify-center">
+        <svg class="w-4 h-4 m-2"><use href="#check"></use></svg>
+        <span class="flex mr-3">Vegan</span>
+    </div>
+    <div class="flex w-auto h-[28px] bg-gray-200 items-center justify-center">
+        <svg class="w-4 h-4 m-2"><use href="#check"></use></svg>
+        <span class="flex mr-3">Gluten Free</span>
+    </div>
+  </div>
+  <hr>
+ <!------Details------->
+  <details class="group mt-2 mb-3">
+    <summary class="cursor-pointer flex justify-between items-center font-semibold">
+        Ingredients
+      <span class="group-open:rotate-180 transition">
+        <svg class="w-4 h-4 cursor-pointer rotate-180">
+            <use href="#chevron-up"></use>
+          </svg>
+      </span>
+    </summary>
+  
+    <div class="mt-2 text-sm text-gray-600">
+      <p>Roasted coffee in whole beans</p>
+    </div>
+  </details>
+
+  <hr>
+
+  <details class="group mt-2 mb-3">
+    <summary class="cursor-pointer flex justify-between items-center font-semibold">
+         Top highlights 
+      <span class="group-open:rotate-180 transition">
+        <svg class="w-4 h-4 cursor-pointer rotate-180">
+            <use href="#chevron-up"></use>
+          </svg>
+      </span>
+    </summary>
+  
+    <div class="mt-2 text-sm text-gray-600">
+        <p>Brand: Melitta</p>
+        <p>Item form	: 	Whole Bean</p>
+        <p>Flavour: Crema</p>
+    </div>
+  </details>
+  <hr>
+  <details class=" group mt-2 mb-3">
+    <summary class="cursor-pointer flex justify-between items-center font-semibold">
+        Item details
+      <span class="group-open:rotate-180 transition">
+        <svg class="w-4 h-4 cursor-pointer rotate-180">
+            <use href="#chevron-up"></use>
+          </svg>
+      </span>
+    </summary>
+  
+    <div class="overflow-hidden mt-4">
+        <table class="w-full text-sm text-left">
+          
+          <tbody>
+            <tr class="border-b">
+              <td class="bg-gray-100 p-2 font-semibold">Brand</td>
+              <td class="p-2">Melitta</td>
+            </tr>
+      
+            <tr class="border-b">
+              <td class="bg-gray-100 p-2 font-semibold">Weight</td>
+              <td class="p-2">1 kg</td>
+            </tr>
+      
+            <tr class="border-b">
+              <td class="bg-gray-100 p-2 font-semibold">Roast</td>
+              <td class="p-2">Medium</td>
+            </tr>
+      
+            <tr class="border-b">
+              <td class="bg-gray-100 p-2 font-semibold">Strength</td>
+              <td class="p-2">3</td>
+            </tr>
+      
+            <tr>
+              <td class="bg-gray-100 p-2 font-semibold">Origin</td>
+              <td class="p-2">Germany</td>
+            </tr>
+      
+          </tbody>
+          
+        </table>
+      </div>
+  </details>
+  
+    <a class="w-[250px] h-10 border items-center justify-center rounded-2xl" href="#"> See all product specifications </a>
+ 
+
+
  
           
 
          
    
-     
     <!----------------------------------------------------------------------------------------------------------------------->
     </div><!--End Container Tag-->
   </div><!--End Body-->
    <!-----------------------------------------------Footer------------------------------------------------------------------------>
-   <footer class="relative bg-gray-800 text-white py-12 z-10 ">
+   <footer class="relative bg-gray-800 text-white py-12 z-10 mt-10">
     <div class="2xl:max-w-[1920px]  mx-auto flex flex-wrap  gap-8 px-6  ">
       <!-- logo-->
       <div class="flex flex-col w-full md:w-[400px] p-6 rounded">
