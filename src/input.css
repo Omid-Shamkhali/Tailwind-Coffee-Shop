@@ -33,7 +33,7 @@
         src: url("Morabba Bold"),url("../fonts/Dana/woff2/Morabba-Bold.woff2") format("woff2");
         font-display: swap;
     }
-    body{
+    body.bodyHome{
         background-image: url("../images/headerBgDesktop.webp");
         background-repeat: no-repeat;
     }
