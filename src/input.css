@@ -37,4 +37,8 @@
         background-image: url("../images/headerBgDesktop.webp");
         background-repeat: no-repeat;
     }
+    body.bodyHomeMobile{
+        background-image: url("../images/body3.jpg");
+        background-repeat: no-repeat;
+    }
 }
