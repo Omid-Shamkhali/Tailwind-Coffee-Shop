@@ -1102,6 +1102,14 @@ body.bodyHomeMobile{
   height: min-content;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
 .min-h-\[200px\] {
   min-height: 200px;
 }
@@ -1282,6 +1290,14 @@ body.bodyHomeMobile{
   width: 1px;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-7 {
+  width: 1.75rem;
+}
+
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -1343,6 +1359,11 @@ body.bodyHomeMobile{
 .gap-x-2\.5 {
   -moz-column-gap: 0.625rem;
        column-gap: 0.625rem;
+}
+
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
 }
 
 .gap-x-4 {
@@ -2395,6 +2416,14 @@ body.bodyHomeMobile{
     height: 98px;
   }
 
+  .md\:h-8 {
+    height: 2rem;
+  }
+
+  .md\:h-7 {
+    height: 1.75rem;
+  }
+
   .md\:w-\[110px\] {
     width: 110px;
   }
@@ -2439,12 +2468,30 @@ body.bodyHomeMobile{
     width: 98px;
   }
 
+  .md\:w-8 {
+    width: 2rem;
+  }
+
+  .md\:w-7 {
+    width: 1.75rem;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
 
   .md\:text-xl {
     font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
@@ -2515,6 +2562,11 @@ body.bodyHomeMobile{
   .lg\:gap-x-9 {
     -moz-column-gap: 2.25rem;
          column-gap: 2.25rem;
+  }
+
+  .lg\:gap-x-7 {
+    -moz-column-gap: 1.75rem;
+         column-gap: 1.75rem;
   }
 
   .lg\:px-10 {
