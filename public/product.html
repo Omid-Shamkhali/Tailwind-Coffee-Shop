@@ -552,8 +552,8 @@
      <!--product images box-->
      <div class="flex md:w-[270px] xl:w-[430px] 2xl:w-[500px] h-[600px] sticky top-20 self-start">
         <!-- mini product image -->
-        <div class="flex-col w-[100px] m-1 child:md:h-[70px] child:lg:h-[100px] child:md:w-[70px] child:lg:w-[100px]">
-            <div class="w-[100px] h-[100px] border rounded-2xl mb-1">
+        <div class="flex-col w-[100px] m-1 child:md:h-[70px] child:lg:h-[100px] child:md:w-[70px] child:lg:w-[100px] child:cursor-pointer child-hover:border-blue-300">
+            <div class="w-[100px] h-[100px] border rounded-2xl mb-1 ">
                 <img src="images/products/p2.png" alt="">
             </div>
             <div class="w-[100px] h-[100px] border rounded-2xl mb-1">
@@ -570,9 +570,9 @@
             </div>
         </div>
         <!--big product image-->
-        <div class="flex relative md:w-[300px] lg:w-[400px] items-center justify-center">
-            <img class="w-[400px] h-[300px]  " src="./images/products/p1.png" alt="Product Image">
-            <div class="absolute top-0 right-0">
+        <div class="flex relative md:w-[300px] lg:w-[400px] items-center justify-center overflow-hidden cursor-pointer">
+            <img class="w-[400px] h-[300px] transition-transform duration-500 hover:scale-110" src="./images/products/p1.png" alt="Product Image">
+            <div class="absolute top-0 right-0 cursor-pointer">
                 <svg class="w-4 h-4"><use href="#share"></use></svg>
             </div>
         </div>
@@ -584,7 +584,7 @@
                 <span>Melitta Barista Classic Crema, Whole Coffee Beans 1 kg, Unground, Coffee Beans for Fully Automatic Coffee Machine, Medium Roast, Strength 3</span>
             </h1>
         </div>
-        <a class="flex text-gray-500 hover:underline" href="#">Visit the Melitta Store</a>
+        <a class="flex text-gray-500 hover:underline hover:text-blue-950" href="#">Visit the Melitta Store</a>
         <div class="flex items-center">
             <span class="flex text-xs mr-1">4.6</span>
             <span class="flex">
@@ -599,7 +599,7 @@
             </span>
             <a class="flex text-[#2162a1] hover:underline text-xs ml-1" href="#">(1,981)</a>
             <span class="flex mr-2 ml-2">  |  </span>
-            <a class="flex hover:underline text-gray-500" href="#">Search this page</a>
+            <a class="flex hover:underline hover:text-blue-950 text-gray-500" href="#">Search this page</a>
            
         </div>
         <span class="flex w-[110px] h-[23px] bg-gray-700 text-gray-100 rounded-lg mt-4 items-center justify-center text-sm">omid's choise</span>
