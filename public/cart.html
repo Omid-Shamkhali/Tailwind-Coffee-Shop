@@ -553,127 +553,145 @@
   </div>
   <!---------------------start body--------------------------------------------------------------------------------->
   <div class="md:h-[100px]"></div>
-  <div class=" container w-[424px] sm:w-[1360px] min-h-screen m-auto flex flex-col mt-[10px] z-10 bg-gray-100">
+  <div class=" container w-[424px] md:w-[1360px] min-h-screen m-auto flex flex-col mt-[10px] z-10 bg-gray-100">
     <div class="flex">
-        <div class="card-left sm:w-[388px] lg:w-[657px] xl:w-[875px]  m-5 mb-5  shadow-md bg-white md:child:text-xs lg:child:text-base">
-            <h2 class=" m-5 mb-5 text-2xl">Shopping Basket</h2>
-            <div class="flex justify-end mr-[110px]"> Price</div>
-            <hr>
-            <div class="flex w-full h-[246px] m-5 ">
-                <div class="flex sm:w-[100px] sm:h-[100px] lg:w-[210px] lg:h-[205px]">
-                    <img src="images/products/p1.png" alt="product iamge">
+        <div class=" mobile-Proceed-to-Checkout md:flex flex-col ">
+
+            <div class="flex flex-col items-center justify-center m-5 w-[388px] h-[118px] bg-white shadow-md md:hidden ">
+                <div class="flex">
+                    <span class="flex">Subtotal (1 item): </span>
+                    <span class="flex">€</span>
+                    <span class="flex font-semibold">135.09</span>
                 </div>
-                <div class="flex flex-col  sm:w-[211px] lg:w-[500px] ml-2">
-                    <a class="flex text-[#2162a1] hover:underline line-clamp-4 ">
-                        Melitta Barista Classic Espresso, Whole Coffee Beans 8 x 1 kg...
-                      </a>
-                    
-                      <span class="flex text-sm text-gray-500">
-                        by Melitta
-                      </span>
-                      <span class="flex text-sm text-red-500">Only 13 left in stock.</span>
-                      <ul>
-                        <li>
-                            <span>Flavour Name:</span>
-                            <span class="text-gray-500"> Espresso</span>
-                            
-                        </li>
-                        <li>
-                            <span>Size Name:</span>
-                            <span class="text-gray-500"> 1 pound (Pack of 8)</span>
-                        </li>
-                      </ul>
-                      <div class="flex mt-auto">
-                        <div class="flex  justify-between items-center  w-[104px] h-[32px] border-4 border-yellow-400 rounded-xl">
-                            <svg class="flex  w-4 h-4 m-2 cursor-pointer">
-                                <use href="#Trash"></use>
-                              </svg>
-                              <span class="flex items-center justify-center w-[40px]">1</span>
-                              <svg class=" flex  w-4 h-4 m-2 cursor-pointer">
-                                <use href="#Plus"></use>
-                              </svg>
-                          </div>
-                          <div class="flex child:ml-2">
-                            <span>|</span>
-                            <span class="text-[#2162a1]">Delete</span>
-                            <span>|</span>
-                            <span class="text-[#2162a1]">Save for later</span>
-                            <span>|</span>
-                            <span class="text-[#2162a1]">See more like this</span>
-                            <span>|</span>
-                            <span class="text-[#2162a1]">Share</span>
-                          </div>
+               
+                <span class="flex w-[258px] h-[30px]  items-center justify-center bg-yellow-500 rounded-2xl cursor-pointer">Proceed to Checkout</span>
+            </div>
+
+            <div class="card-left w-[388px]  lg:w-[657px] xl:w-[875px]  m-5 mb-5  shadow-md bg-white child:text-xs lg:child:text-base">
+                <div class="m-5"><h2 class="text-lg">Shopping Basket</h2></div>
+                
+                <div class="flex justify-end mr-[87px] md:mr-[87px] xl:mr-[160px]"> Price</div>
+                <hr>
+                <div class="flex w-full h-[130px] lg:h-[160px] m-5">
+                    <div class="flex w-[100px] h-[100px] lg:w-[150px] lg:h-[150px]">
+                        <img src="images/products/p1.png" alt="product iamge">
+                    </div>
+                    <div class="flex flex-col  w-[211px] lg:w-[500px] ml-2">
+                        <a class="flex text-[#2162a1] hover:underline line-clamp-4 ">
+                            Melitta Barista Classic Espresso, Whole Coffee Beans 8 x 1 kg...
+                          </a>
+                        
+                          <span class="flex text-sm text-gray-500">
+                            by Melitta
+                          </span>
+                          <span class="flex text-sm text-red-500">Only 13 left in stock.</span>
+                          <ul>
+                            <li>
+                                <span>Flavour Name:</span>
+                                <span class="text-gray-500"> Espresso</span>
+                                
+                            </li>
+                            <li>
+                                <span>Size Name:</span>
+                                <span class="text-gray-500"> 1 pound (Pack of 8)</span>
+                            </li>
+                          </ul>
+                      
+                    </div>
+                    <div class="flex flex-col w-[170px] ">
+                        <div class="flex">
+                            <span>€</span>
+                            <span class="font-semibold">135.99</span>
+                        </div>  
+                        <span class="flex text-sm">(€16.94 / kg)</span>
+                    </div>
+                 
+                </div>
+                <div class="flex m-5">
+                    <div class="flex  justify-between items-center  w-[104px] h-[32px] border-4 border-yellow-400 rounded-xl">
+                        <svg class="flex  w-4 h-4 m-2 cursor-pointer">
+                            <use href="#Trash"></use>
+                          </svg>
+                          <span class="flex items-center justify-center w-[40px]">1</span>
+                          <svg class=" flex  w-4 h-4 m-2 cursor-pointer">
+                            <use href="#Plus"></use>
+                          </svg>
                       </div>
+                      <div class="flex child:ml-2">
+                        <span>|</span>
+                        <span class="text-[#2162a1]">Delete</span>
+                        <span>|</span>
+                        <span class="text-[#2162a1]">Save for later</span>
+                        <span>|</span>
+                        <span class="text-[#2162a1]">See more like this</span>
+                        <span>|</span>
+                        <span class="text-[#2162a1]">Share</span>
+                      </div>
+                  </div>
+                <hr>
+                <div class="flex w-full h-[130px] lg:h-[160px] m-5">
+                    <div class="flex w-[100px] h-[100px] lg:w-[150px] lg:h-[150px]">
+                        <img src="images/products/p2.png" alt="product iamge">
+                    </div>
+                    <div class="flex flex-col  w-[211px] lg:w-[500px] ml-2">
+                        <a class="flex text-[#2162a1] hover:underline line-clamp-4">
+                            Melitta Barista Classic Espresso, Whole Coffee Beans 8 x 1 kg...
+                          </a>
+                        
+                          <span class="flex text-sm text-gray-500">
+                            by Melitta
+                          </span>
+                          <span class="flex text-sm text-red-500">Only 13 left in stock.</span>
+                          <ul>
+                            <li>
+                                <span>Flavour Name:</span>
+                                <span class="text-gray-500"> Espresso</span>
+                                
+                            </li>
+                            <li>
+                                <span>Size Name:</span>
+                                <span class="text-gray-500"> 1 pound (Pack of 8)</span>
+                            </li>
+                          </ul>
+                          
+                    </div>
+                    <div class="flex flex-col w-[170px] ">
+                        <div class="flex">
+                            <span>€</span>
+                            <span class="font-semibold">135.99</span>
+                        </div>  
+                        <span class="flex text-sm">(€16.94 / kg)</span>
+                    </div>
+                 
                 </div>
-                <div class="flex flex-col w-[170px] ">
-                    <div class="flex">
-                        <span>€</span>
-                        <span class="font-semibold">135.99</span>
-                    </div>  
-                    <span class="flex text-sm">(€16.94 / kg)</span>
-                </div>
-             
+                <div class="flex mt-auto m-5">
+                    <div class="flex  justify-between items-center  w-[104px] h-[32px] border-4 border-yellow-400 rounded-xl">
+                        <svg class="flex  w-4 h-4 m-2 cursor-pointer">
+                            <use href="#Trash"></use>
+                          </svg>
+                          <span class="flex items-center justify-center w-[40px]">1</span>
+                          <svg class=" flex  w-4 h-4 m-2 cursor-pointer">
+                            <use href="#Plus"></use>
+                          </svg>
+                      </div>
+                      <div class="flex child:ml-2">
+                        <span>|</span>
+                        <span class="text-[#2162a1]">Delete</span>
+                        <span>|</span>
+                        <span class="text-[#2162a1]">Save for later</span>
+                        <span>|</span>
+                        <span class="text-[#2162a1]">See more like this</span>
+                        <span>|</span>
+                        <span class="text-[#2162a1]">Share</span>
+                      </div>
+                  </div>  
+                <hr>
+                <div class="flex justify-end mb-5 m-5">Subtotal (1 item): €135.09</div>
             </div>
-            <hr>
-            <div class="flex w-full h-[246px] m-5 ">
-                <div class="flex sm:w-[100px] sm:h-[100px] lg:w-[210px] lg:h-[205px]">
-                    <img src="images/products/p2.png" alt="product iamge">
-                </div>
-                <div class="flex flex-col  sm:w-[211px] lg:w-[500px] ml-2">
-                    <a class="flex text-[#2162a1] hover:underline line-clamp-4">
-                        Melitta Barista Classic Espresso, Whole Coffee Beans 8 x 1 kg...
-                      </a>
-                    
-                      <span class="flex text-sm text-gray-500">
-                        by Melitta
-                      </span>
-                      <span class="flex text-sm text-red-500">Only 13 left in stock.</span>
-                      <ul>
-                        <li>
-                            <span>Flavour Name:</span>
-                            <span class="text-gray-500"> Espresso</span>
-                            
-                        </li>
-                        <li>
-                            <span>Size Name:</span>
-                            <span class="text-gray-500"> 1 pound (Pack of 8)</span>
-                        </li>
-                      </ul>
-                      <div class="flex mt-auto">
-                        <div class="flex  justify-between items-center  w-[104px] h-[32px] border-4 border-yellow-400 rounded-xl">
-                            <svg class="flex  w-4 h-4 m-2 cursor-pointer">
-                                <use href="#Trash"></use>
-                              </svg>
-                              <span class="flex items-center justify-center w-[40px]">1</span>
-                              <svg class=" flex  w-4 h-4 m-2 cursor-pointer">
-                                <use href="#Plus"></use>
-                              </svg>
-                          </div>
-                          <div class="flex child:ml-2">
-                            <span>|</span>
-                            <span class="text-[#2162a1]">Delete</span>
-                            <span>|</span>
-                            <span class="text-[#2162a1]">Save for later</span>
-                            <span>|</span>
-                            <span class="text-[#2162a1]">See more like this</span>
-                            <span>|</span>
-                            <span class="text-[#2162a1]">Share</span>
-                          </div>
-                      </div>     
-                </div>
-                <div class="flex flex-col w-[170px] ">
-                    <div class="flex">
-                        <span>€</span>
-                        <span class="font-semibold">135.99</span>
-                    </div>  
-                    <span class="flex text-sm">(€16.94 / kg)</span>
-                </div>
-             
-            </div>
-            <hr>
-            <div class="flex justify-end mb-5 m-5">Subtotal (1 item): €135.09</div>
         </div>
-        <div class=" card-right w-[400px] mb-5 sm:child:text-xs lg:child:text-base  ">
+      
+       
+        <div class=" card-right hidden md:block w-[400px] mb-5 sm:child:text-xs lg:child:text-base  ">
             <div class="flex flex-col items-center justify-center m-5 w-[300px] h-[118px] bg-white shadow-md ">
                 <div class="flex">
                     <span class="flex">Subtotal (1 item): </span>
