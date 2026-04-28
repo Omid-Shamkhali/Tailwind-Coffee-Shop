@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CoffeShop</title>
   <link rel="stylesheet" href="./styles/app.css">
-  <link rel="stylesheet" href="./styles/cart.css">
   <link rel="icon" href="images/fav-icon.png" type="image/png">
 </head>
-<body class="productPage font-Dana bg-gray-100 dark:bg-zinc-800">
+<body class="checkoutPage font-Dana bg-gray-100 dark:bg-zinc-800 ">
   <!--All app icons-->
   <svg class="hidden">
     <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -179,30 +178,12 @@
       <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
       <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
     </symbol>
-    <symbol id="share" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
-    </symbol>
-    <symbol id="down" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-    </symbol>
-    <symbol id="check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-    </symbol>
-    <symbol id="chat" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
-    </symbol>
-    <symbol id="heart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-    </symbol>
-    <symbol id="Trash" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-        <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
-    </symbol>
-    <symbol id="Plus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
-        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-      </symbol>
-      
-      
-      
+    
+    
+    
+    
+    
+
   </svg>
   <!-------------------------------------------------------------------------------------------------------------->
   <header class="fixed hidden md:flex top-9 right-0 left-0 items-center bg-black/50 w-[98%] lg:w-[90%] h-24 px-5 lg:px-10 py-5 mx-auto rounded-3xl backdrop-blur-[6px] z-20">
@@ -214,152 +195,40 @@
           <img src="images/app-logo.png" alt="Golden Coffe">
         </div>
         <!--Menu-->
-        <ul class="flex gap-x-5 lg:gap-x-9 text-xl text-gray-300 tracking-tightest h-full child:leading-[56px]">
+        <ul class="flex gap-x-5 lg:gap-x-9 text-base md:text-xl text-gray-300 tracking-tightest h-full child:leading-[56px]">
           <li class="font-DanaMedium text-orange-200">
-            <a href="./index.html">Home</a>
+            <a href="#">Home</a>
           </li>
-          <!--has Sub-->
-          <li class="relative group">
-            <a href="#" class="group-hover:text-orange-300 transition-colors">Shop</a>
-            <!--Sub Menu-->
-            <div class="absolute text-base p-6 w-52 space-y-4 top-full tracking-normal shadow-normal text-zinc-700 dark:text-white border-t-[3px] border-t-orange-300 bg-white rounded-2xl dark:bg-zinc-700 child:inline-block child:transition-colors child-hover:text-orange-300 opacity-0 invisible transition-all delay-75 group-hover:opacity-100 group-hover:visible ">
-              <a href="#">Special coffee</a>
-              <a href="#">Specially at the global level</a>
-              <a href="#">First class coffee</a>
-              <a href="#">Commercial compounds</a>
-              <a href="#">Coffee capsule</a>
-              <a href="#">Brazilian Zino Coffee</a>
-            </div>
-          </li>
-          <li><a href="#" class="hover:text-orange-300 transition-colors">Dictionary</a></li>
-          <li><a href="#" class="hover:text-orange-300 transition-colors">Blog</a></li>
-          <li><a href="#" class="hover:text-orange-300 transition-colors">About us</a></li>
-          <li><a href="#" class="hover:text-orange-300 transition-colors">Contact us</a></li>
         </ul>
+        
       </nav>
+      <h3 class="text-[30px] text-white">Secure checkout</h3>
       <!--Cart & Theme Toggle , Login Link-->
       <div class="flex gap-x-4 lg:gap-x-5 xl:gap-x-10 text-xl items-center text-orange-200">
         <!--Cart Icon & Theme Switch Btn-->
-        <div class="flex items-center gap-x-4 lg:gap-x-5">
+        <div class="flex items-center gap-x-2 lg:gap-x-5">
           <!-- Cart -->
           <div class="relative group">
             <!-- Cart Icon hover-->
             <div class="py-3 cursor-pointer">
-              <svg class="w-8 h-8">
+              <a href="cart.html">
+              <svg class="w-7 h-7">
                 <use xlink:href="#shopping-cart"></use>
               </svg>
-              <!-- Cart box -->
-              <div class="absolute top-full right-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible w-[400px] p-5 bg-white dark:bg-zinc-700 border-t-[3px] border-t-orange-300 shadow-normal rounded-2xl transition-all delay-75">
-                <!-- Cart header -->
-                <div class="flex justify-between items-center font-DanaMedium text-xs">
-                  <span class="text-gray-300 ">one item</span>
-                  <a href="#" class="flex items-center text-orange-300">
-                    View Basket
-                    <svg class="w-4 h-4">
-                      <use xlink:href="#Arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-                <!-- Cart body -->
-                <div class="pb-1 border-b border-b-gray-300 dark:border-b-white/10 divide-y divide-gray-100 dark:divide-white/10 child:py-5">
-                  <div class="flex gap-x-2.5 ">
-                    <img class="w-[120px] h-[120px]" src="images/products/p1.png" alt="product image">
-                    <div class="flex flex-col justify-between">
-                      <h4 class="font-DanaMedium text-zinc-700 dark:text-white text-base line-clamp-2">Caffè Borbone
-                        Selection 100% Arabica 1kg</h4>
-                      <div>
-                        <span class="text-teal-600 dark:text-emerald-500 text-xs">1.5 euro Off</span>
-                        <div class="text-zinc-700 dark:text-white font-DanaDemiBold">16
-                          <span class="font-Dana text-sm">euro</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-2.5">
-                    <img class="w-[120px] h-[120px]" src="images/products/p2.png" alt="product image">
-                    <div class="flex flex-col justify-between">
-                      <h4 class="font-DanaMedium text-zinc-700 dark:text-white text-base line-clamp-2">Jacobs 3in1
-                        Kaffee-Sticks Classic Arabica </h4>
-                      <div>
-                        <span class="text-teal-600 dark:text-emerald-500 text-xs">2 euro Off</span>
-                        <div class="text-zinc-700 dark:text-white font-DanaDemiBold">14.5
-                          <span class="font-Dana text-sm">euro</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex justify-between mt-5">
-                  <div>
-                    <p class="font-DanaMedium text-xs text-gray-300"> Order Total </p>
-                    <span class="text-xl text-zinc-700 dark:text-white">30.5</span>
-                    <span class="text-sm  text-zinc-700 dark:text-white">Euro</span>
-                  </div>
-                  <div>
-                    <a href="#"
-                      class="flex items-center justify-center h-14 w-[144px] bg-teal-600 dark:bg-emerald-500 text-xl text-white rounded-xl transition-colors hover:bg-teal-700 dark:hover:bg-emerald-600">Checkout</a>
-                  </div>
-                </div>
-              </div>
+              </a> 
             </div>
-          </div>
-          <!--   Theme Switch Btn-->
-        <!--  <div class="toggle-theme py-3 cursor-pointer">
-            <svg class="w-8 h-8 inline-block dark:hidden">
-              <use xlink:href="#Moon"></use>
-            </svg>
-            <svg class="w-8 h-8 hidden dark:inline-block">
-              <use xlink:href="#Sun"></use>
-            </svg>
-          </div>
-        </div>-->
-        <!--Divide-->
-        <span class="block w-px h-14 bg-white/20"></span>
-          <ul>
-            <li class="relative group">
-              <a href="#" class="flex group-hover:text-orange-300 transition-colors">
-                <svg class="flex w-8 h-8 rotate-180">
-                  <use xlink:href="#Arrow"></use>
-                </svg>
-                Registration | login</a>
-              <!--Sub Menu-->
-              <div class="flex flex-col absolute text-base p-3 w-52 space-y-4 top-full tracking-normal shadow-normal text-zinc-700 dark:text-white border-t-[3px] mt-4 border-t-orange-300 bg-white rounded-2xl dark:bg-zinc-700
-              child:flex child:items-center child:gap-2 child:transition-colors 
-              opacity-0 invisible transition-all delay-75 group-hover:opacity-100 group-hover:visible">
-              
-                <a href="#" class="w-[180px] h-[40px] rounded-2xl hover:bg-orange-50 hover:text-orange-300">
-                  <svg class="w-4 h-4 ml-1"><use href="#shopping-bag"></use></svg>
-                  My orders
-                </a>
-              
-                <a href="#" class="w-[180px] h-[40px] rounded-2xl hover:bg-orange-50 hover:text-orange-300">
-                  <svg class="w-4 h-4 ml-1"><use href="#Email-box"></use></svg>
-                  Message List
-                </a>
-              
-                <a href="#" class="w-[180px] h-[40px] rounded-2xl hover:bg-orange-50 hover:text-orange-300">
-                  <svg class="w-4 h-4 ml-1"><use href="#sitting"></use></svg>
-                  Account Information
-                </a>
-              <span class="border-t border-t-gray-300 dark:border-t-white/10"></span>
-                <a href="#" class="w-[180px] h-[40px] rounded-2xl hover:bg-red-100 hover:text-red-500 !hover:text-red-500 ">
-                  <svg class="w-4 h-4 ml-1"><use href="#Arrow"></use></svg>
-                  Sign out
-                </a>
-              </div>
-            </li>
-          </ul>
+          </div> 
+        </div>
       </div>
     </div>
   </header>
   <!-------------------------------------------------------------------------------------------------------------->
-  <div class="h-[60px] md:h-[100px]"></div>
-  <div class="fixed top-0 right-0 left-0 items-center flex md:hidden bg-white dark:bg-zinc-700 px-4 justify-between h-16 z-20">
+  <div class="h-[330px] md:h-[906px]"></div>
+  <div
+    class="fixed top-0 right-0 left-0 items-center flex md:hidden bg-white dark:bg-zinc-700 px-4 justify-between h-16">
     <!-- Nav icon-->
     <div>
-      <svg class="bar-btn w-6 h-6 mt-3 text-zinc-700 dark:text-white">
-        <use href="#bar3"></use>
-      </svg>
+    
     </div>
     <!-- Nav (mobile menu)-->
  
@@ -456,7 +325,7 @@
           </svg>
           Registration | login
         </a>
-       <!-- <span class="flex items-center gap-x-2">
+        <span class="flex items-center gap-x-2">
           <svg class="w-5 h-5 inline-block dark:hidden">
             <use xlink:href="#Moon"></use>
           </svg>
@@ -467,7 +336,7 @@
             <span class="inline-block dark:hidden">Dark Theme</span>
             <span class="hidden dark:inline-block">Light Theme</span>
           </div>
-        </span>-->
+        </span>
         <a href="#" class="inline-flex items-center gap-x-2">
           <svg class="w-5 h-5 ">
             <use xlink:href="#shopping-cart"></use>
@@ -478,9 +347,7 @@
     </div>
     <!--  Logo type-->
     <div>
-      <svg class="w-[100px] h-10">
-        <use href="#app-logo-type"></use>
-      </svg>
+        <h3 class="text-[20px]">Secure checkout</h3>
     </div>
     <!-- Cart icon-->
     <div>
@@ -489,6 +356,7 @@
       </svg>
     </div>
   </div>
+  <!-------------------------------------------------------------------------------------------------------------->
   <!--mobile Basket-->
   <div
     class="mobile-basket top-0 mobile-menu flex md:hidden w-64 min-h-screen fixed -right-64 pt-3 px-4 bg-white mb-3 text-zinc-700 dark:text-white pb-1 border-b-gray-100 dark:border-b-white/10 dark:bg-zinc-700 z-20 transition-all overflow-y-auto">
@@ -541,319 +409,23 @@
       </div>
     </div>
   </div>
-  <!----------------------------------------------------start body-------------------------------------------------->
-  <div class="md:h-[100px]"></div>
-  <div class=" container w-[424px] md:w-[1360px] min-h-screen m-auto flex flex-col mt-[10px] z-10 bg-gray-100">
-    <div class="flex">
-        <div class=" mobile-Proceed-to-Checkout md:flex flex-col ">
-            <div class="flex flex-col items-center justify-center m-5 w-[388px] h-[118px] bg-white shadow-md md:hidden ">
-                <div class="flex">
-                    <span class="flex">Subtotal (1 item): </span>
-                    <span class="flex">€</span>
-                    <span class="flex font-semibold">135.09</span>
-                </div>
-                <span class="flex w-[258px] h-[30px]  items-center justify-center bg-yellow-500 rounded-2xl cursor-pointer">Proceed to Checkout</span>
-            </div>
-            <div class="card-left w-[388px]  lg:w-[657px] xl:w-[875px] m-5 mb-5 shadow-md bg-white child:text-xs lg:child:text-base">
-                <div class="m-5"><h2 class="text-lg">Shopping Basket</h2></div>
-                <div class="flex justify-end mr-[87px] md:mr-[87px] xl:mr-[160px]"> Price</div>
-                <hr>
-                <div class="flex w-full h-[130px] lg:h-[160px] m-5">
-                    <div class="flex w-[100px] h-[100px] lg:w-[150px] lg:h-[150px]">
-                        <img src="images/products/p1.png" alt="product iamge">
-                    </div>
-                    <div class="flex flex-col  w-[211px] lg:w-[500px] ml-2">
-                        <a class="flex text-[#2162a1] hover:underline line-clamp-4 ">
-                            Melitta Barista Classic Espresso, Whole Coffee Beans 8 x 1 kg...
-                          </a>
-                          <span class="flex text-sm text-gray-500">
-                            by Melitta
-                          </span>
-                          <span class="flex text-sm text-red-500">Only 2 left in stock.</span>
-                          <ul>
-                            <li>
-                                <span>Flavour Name:</span>
-                                <span class="text-gray-500"> Espresso</span>   
-                            </li>
-                            <li>
-                                <span>Size Name:</span>
-                                <span class="text-gray-500"> 1 pound (Pack of 8)</span>
-                            </li>
-                          </ul>
-                    </div>
-                    <div class="flex flex-col w-[170px]">
-                        <div class="flex">
-                            <span>€</span>
-                            <span class="font-semibold">135.99</span>
-                        </div>  
-                        <span class="flex text-sm">(€16.94 / kg)</span>
-                    </div>
-                </div>
-                <div class="flex m-5">
-                    <div class="flex  justify-between items-center w-[104px] h-[32px] border-4 border-yellow-400 rounded-xl">
-                        <svg class="flex w-4 h-4 m-2 cursor-pointer">
-                            <use href="#Trash"></use>
-                          </svg>
-                          <span class="flex items-center justify-center w-[40px]">1</span>
-                          <svg class=" flex  w-4 h-4 m-2 cursor-pointer">
-                            <use href="#Plus"></use>
-                          </svg>
-                      </div>
-                      <div class="flex child:ml-2">
-                        <span>|</span>
-                        <span class="text-[#2162a1]">Delete</span>
-                        <span>|</span>
-                        <span class="text-[#2162a1]">Save for later</span>
-                        <span>|</span>
-                        <span class="text-[#2162a1]">See more like this</span>
-                        <span>|</span>
-                        <span class="text-[#2162a1]">Share</span>
-                      </div>
-                  </div>
-                <hr>
-                <div class="flex w-full h-[130px] lg:h-[160px] m-5">
-                    <div class="flex w-[100px] h-[100px] lg:w-[150px] lg:h-[150px]">
-                        <img src="images/products/p2.png" alt="product iamge">
-                    </div>
-                    <div class="flex flex-col  w-[211px] lg:w-[500px] ml-2">
-                        <a class="flex text-[#2162a1] hover:underline line-clamp-4">
-                            Melitta Barista Classic Espresso, Whole Coffee Beans 8 x 1 kg...
-                          </a>
-                          <span class="flex text-sm text-gray-500">
-                            by Melitta
-                          </span>
-                          <span class="flex text-sm text-red-500">Only 13 left in stock.</span>
-                          <ul>
-                            <li>
-                                <span>Flavour Name:</span>
-                                <span class="text-gray-500"> Espresso</span>
-                            </li>
-                            <li>
-                                <span>Size Name:</span>
-                                <span class="text-gray-500"> 1 pound (Pack of 8)</span>
-                            </li>
-                          </ul>  
-                    </div>
-                    <div class="flex flex-col w-[170px] ">
-                        <div class="flex">
-                            <span>€</span>
-                            <span class="font-semibold">135.99</span>
-                        </div>  
-                        <span class="flex text-sm">(€16.94 / kg)</span>
-                    </div>
-                </div>
-                <div class="flex mt-auto m-5">
-                    <div class="flex  justify-between items-center  w-[104px] h-[32px] border-4 border-yellow-400 rounded-xl">
-                        <svg class="flex  w-4 h-4 m-2 cursor-pointer">
-                            <use href="#Trash"></use>
-                          </svg>
-                          <span class="flex items-center justify-center w-[40px]">1</span>
-                          <svg class=" flex  w-4 h-4 m-2 cursor-pointer">
-                            <use href="#Plus"></use>
-                          </svg>
-                      </div>
-                      <div class="flex child:ml-2">
-                        <span>|</span>
-                        <span class="text-[#2162a1]">Delete</span>
-                        <span>|</span>
-                        <span class="text-[#2162a1]">Save for later</span>
-                        <span>|</span>
-                        <span class="text-[#2162a1]">See more like this</span>
-                        <span>|</span>
-                        <span class="text-[#2162a1]">Share</span>
-                      </div>
-                  </div>  
-                <hr>
-                <div class="flex justify-end mb-5 m-5">Subtotal (1 item): €135.09</div>
-            </div>
-        </div>
-        <div class=" card-right hidden md:block w-[400px] mb-5 sm:child:text-xs lg:child:text-base">
-            <div class="flex flex-col items-center justify-center m-5 w-[300px] h-[118px] bg-white shadow-md ">
-                <div class="flex">
-                    <span class="flex">Subtotal (1 item): </span>
-                    <span class="flex">€</span>
-                    <span class="flex font-semibold">135.09</span>
-                </div>
-                <span class="flex w-[258px] h-[30px] items-center justify-center bg-yellow-500 rounded-2xl cursor-pointer">Proceed to Checkout</span>
-            </div>
-            <div class="flex flex-col items-center justify-center m-5 w-[300px]  bg-white shadow-md">
-                <h3 class="line-clamp-4 m-5">Frequently bought together with Melitta Barista Classic Espresso, Whole Coffee Bea</h3>
-                <div class="flex">
-                    <div class="flex w-[100px] h-[100px]">
-                        <img src="images/products/p2.png" alt="product image">
-                    </div>
-                    <div class="flex flex-col w-[154px]">
-                        <div><span class="line-clamp-1">Melitta Barista Classic Crema, Whole Coffee Beans 8 x 1 kg, Unground, Coffee Beans for Fully Automatic Coffee Machine, Medium Roast, Strength 4, in Tray</span></div>
-                        <div class="flex">
-                            <svg class="w-4 h-4 text-orange-400"><use href="#star"></use></svg>
-                            <svg class="w-4 h-4 text-orange-400"><use href="#star"></use></svg>
-                            <svg class="w-4 h-4 text-orange-400"><use href="#star"></use></svg>
-                            <svg class="w-4 h-4 text-gray-400"><use href="#star"></use></svg>
-                            <svg class="w-4 h-4 text-gray-400"><use href="#star"></use></svg>
-                          </div>
-                          <div class="flex flex-col w-[170px]">
-                            <div class="flex">
-                                <span>€</span>
-                                <span class="font-semibold">135.99</span>
-                            </div>  
-                            <span class="flex text-sm">(€16.94 / kg)</span>
-                        </div>
-                        <div><span>FREE Delivery</span></div>
-                        <div class="flex justify-center items-center mb-5 mr-10">
-                            <span class="flex w-[138px] h-[30px] items-center justify-center bg-yellow-300 rounded-2xl cursor-pointer">Add to basket</span>
-                        </div>   
-                    </div>
-                </div>
-                <div class="flex">
-                    <div class="flex w-[100px] h-[100px]">
-                        <img src="images/products/p4.png" alt="product image">
-                    </div>
-                    <div class="flex flex-col w-[154px]">
-                        <div><span class="line-clamp-1">Melitta Barista Classic Crema, Whole Coffee Beans 8 x 1 kg, Unground, Coffee Beans for Fully Automatic Coffee Machine, Medium Roast, Strength 4, in Tray</span></div>
-                        <div class="flex">
-                            <svg class="w-4 h-4 text-orange-400"><use href="#star"></use></svg>
-                            <svg class="w-4 h-4 text-orange-400"><use href="#star"></use></svg>
-                            <svg class="w-4 h-4 text-orange-400"><use href="#star"></use></svg>
-                            <svg class="w-4 h-4 text-orange-400"><use href="#star"></use></svg>
-                            <svg class="w-4 h-4 text-gray-400"><use href="#star"></use></svg>
-                          </div>
-                          <div class="flex flex-col w-[170px]">
-                            <div class="flex">
-                                <span class="mr-2 text-red-500">-3%</span>
-                                <span>€</span>
-                                <span class="font-semibold">144.99</span>
-                            </div>  
-                            <span class="flex text-sm">(€16.94 / kg)</span>
-                        </div>
-                        <div><span>FREE Delivery</span></div>
-                        <div class="flex justify-center items-center mb-5 mr-10">
-                            <span class="flex w-[138px] h-[30px] items-center justify-center bg-yellow-300 rounded-2xl cursor-pointer">Add to basket</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex">
-                    <div class="flex w-[100px] h-[100px]">
-                        <img src="images/products/p3.png" alt="product image">
-                    </div>
-                    <div class="flex flex-col w-[154px]">
-                        <div><span class="line-clamp-1">Melitta Barista Classic Crema, Whole Coffee Beans 8 x 1 kg, Unground, Coffee Beans for Fully Automatic Coffee Machine, Medium Roast, Strength 4, in Tray</span></div>
-                        <div class="flex">
-                            <svg class="w-4 h-4 text-orange-400"><use href="#star"></use></svg>
-                            <svg class="w-4 h-4 text-orange-400"><use href="#star"></use></svg>
-                            <svg class="w-4 h-4 text-gray-400"><use href="#star"></use></svg>
-                            <svg class="w-4 h-4 text-gray-400"><use href="#star"></use></svg>
-                            <svg class="w-4 h-4 text-gray-400"><use href="#star"></use></svg>
-                          </div>
-                          <div class="flex flex-col w-[170px]">
-                            <div class="flex">
-                                <span>€</span>
-                                <span class="font-semibold">99.99</span>
-                            </div>  
-                            <span class="flex text-sm">(€16.94 / kg)</span>
-                        </div>
-                        <div><span>FREE Delivery</span></div>
-                        <div class="flex justify-center items-center mb-5 mr-10">
-                            <span class="flex w-[138px] h-[30px]  items-center justify-center bg-yellow-300 rounded-2xl cursor-pointer">Add to basket</span>
-                        </div> 
-                    </div>
-                </div>
-                <div class="flex">
-                    <div class="flex w-[100px] h-[100px]">
-                        <img src="images/products/p1.png" alt="product image">
-                    </div>
-                    <div class="flex flex-col w-[154px]">
-                        <div><span class="line-clamp-1">Melitta Barista Classic Crema, Whole Coffee Beans 8 x 1 kg, Unground, Coffee Beans for Fully Automatic Coffee Machine, Medium Roast, Strength 4, in Tray</span></div>
-                        <div class="flex">
-                            <svg class="w-4 h-4 text-orange-400"><use href="#star"></use></svg>
-                            <svg class="w-4 h-4 text-orange-400"><use href="#star"></use></svg>
-                            <svg class="w-4 h-4 text-orange-400"><use href="#star"></use></svg>
-                            <svg class="w-4 h-4 text-orange-400"><use href="#star"></use></svg>
-                            <svg class="w-4 h-4 text-orange-400"><use href="#star"></use></svg>
-                          </div>
-                          <div class="flex flex-col w-[170px]">
-                            <div class="flex">
-                                <span>€</span>
-                                <span class="font-semibold">101.99</span>
-                            </div>  
-                            <span class="flex text-sm">(€16.94 / kg)</span>
-                        </div>
-                        <div><span>FREE Delivery</span></div>
-                        <div class="flex justify-center items-center mb-5 mr-10">
-                            <span class="flex w-[138px] h-[30px]  items-center justify-center bg-yellow-300 rounded-2xl cursor-pointer">Add to basket</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-  <!------------------------------------------------------------------------------------------------------------------------------>
-</div><!--End Container Tag-->
+  <!---------------------start body--------------------------------------------------------------------------------->
+  <div class="container w-[424px] sm:w-[1360px] min-h-screen m-auto flex flex-col mt-[60px] z-10">
+    
+    
+ 
+     
+   <!----------------------------------------------------------------------------------------------------------------------->
+    </div><!--End Container Tag-->
   </div><!--End Body-->
    <!-----------------------------------------------Footer------------------------------------------------------------------------>
    <footer class="relative bg-gray-800 text-white py-12 z-10">
-    <div class="2xl:max-w-[1920px]  mx-auto flex flex-wrap  gap-8 px-6  ">
-      <!-- logo-->
-      <div class="flex flex-col w-full md:w-[400px] p-6 rounded">
-        <div class="flex items-center gap-3">
-          <svg class="w-[138px] h-[54px]"><use href="#app-logo-type"></use></svg>
-          <img class="w-[57px] h-[54px]" src="images/app-logo.png" alt="logo">
-        </div>
-        <p class="mt-4 text-gray-300 text-sm">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perspiciatis, eius atque magni explicabo esse vitae accusantium quidem dolore, ea omnis, dolores sint laboriosam quos hic eum nam quo quisquam.
-        </p>
-      </div>
-      <!--contact -->
-      <div class="min-h-[200px] rounded p-6">
-        <h3 class="text-xl font-semibold mb-4 text-gray-300">Quick access</h3>
-      
-        <div class="flex">
-          <div class="flex flex-col mr-10 space-y-2">
-            <a href="#" class="text-gray-300 hover:underline">- Privacy</a>
-            <a href="#" class="text-orange-300 hover:underline">- return goods</a>
-            <a href="#" class="text-gray-300 hover:underline">- Terms of Use</a>
-            <a href="#" class="text-gray-300 hover:underline">- order registration</a>
-          </div>
-          <div class="flex flex-col space-y-2">
-            <a href="#" class="text-gray-300 hover:underline">- Frequently asked questions</a>
-            <a href="#" class="text-gray-300 hover:underline">- Job opportunity</a>
-            <a href="#" class="text-gray-300 hover:underline">- Warranties</a>
-            <a href="#" class="text-gray-300 hover:underline">- Contact us</a>
-          </div>
-        </div>
-      </div>
-      <div class="flex w-full md:w-[600px] p-6 rounded ">
-        <div class="felx flex-col">
-          <div class="flex">
-            <span class="text-xl">be in touch</span>
-          </div>
-          <div class="flex mt-5">
-            <svg class="w-4 h-4 mr-2"><use href="#map-pin"></use></svg>
-            <p> Germany-Hamburg,heineweg </p>    
-          </div>
-          <div class="flex mt-5">
-            <svg class="w-4 h-4 mt-1 mr-2 text-orange-300"><use href="#"></use></svg>
-            <span class="flex gap-x-5 text-orange-300">info@coffe.com</span>
-            <svg class="w-4 h-4 mt-1 ml-5 mr-2"><use href="#phone"></use></svg>
-            <span>0049-175001...</span>
-            <span class="ml-5">0049-165523...</span>
-          </div>
-          <div class="flex mt-5">
-            <a class="flex w-[128px] h-[29px] rounded-2xl items-center justify-center  border border-orange-200 text-orange-300 text-sm" href="#">
-              @golden-coffe
-              <svg class="w-[20px] h-[20px] fill-current ">
-                <use href="#"></use>
-              </svg>
-            </a> 
-            <a class="flex w-[128px] h-[29px] rounded-2xl items-center justify-center border border-orange-300 text-zinc-700 text-sm ml-5 bg-gradient-to-r from-orange-300 to-orange-200" href="#">
-              @golden-coffe
-              <svg class="w-[20px] h-[20px] fill-current">
-                <use href="#"></use>
-              </svg>
-            </a> 
-          </div>
-        </div>
-      </div>
+    <div class="flex justify-center items-center child:ml-5 child:text-gray-300 child:text-xs mb-5 child:cursor-pointer">
+        <a href="#" class="hover:underline">Conditions of Use & Sale</a>
+        <a href="#" class="hover:underline">Privacy Notice</a>
+        <a href="#" class="hover:underline">Imprint</a>
+        <a href="#" class="hover:underline">Cookies Notice</a>
+        <a href="#" class="hover:underline">Interest-Based Ads Notice</a>
     </div>
     <div class="border-t border-t-white/10 gap-8 px-6"></div>
     <div class="flex justify-between m-5 ml-10 child:text-gray-400">
