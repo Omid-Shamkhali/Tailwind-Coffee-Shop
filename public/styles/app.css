@@ -1288,6 +1288,10 @@ body.bodyHomeMobile{
   width: 18px;
 }
 
+.w-\[200px\] {
+  width: 200px;
+}
+
 .w-\[20px\] {
   width: 20px;
 }
@@ -1402,10 +1406,6 @@ body.bodyHomeMobile{
 
 .w-px {
   width: 1px;
-}
-
-.w-\[200px\] {
-  width: 200px;
 }
 
 .max-w-\[700px\] {
@@ -1765,19 +1765,14 @@ body.bodyHomeMobile{
   background-color: rgb(253 224 71 / var(--tw-bg-opacity, 1));
 }
 
-.bg-yellow-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
-}
-
-.bg-yellow-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(202 138 4 / var(--tw-bg-opacity, 1));
-}
-
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity, 1));
+}
+
+.bg-yellow-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gradient-to-r {
@@ -2737,6 +2732,11 @@ body.bodyHomeMobile{
 
   .child\:md\:w-\[70px\]>* {
     width: 70px;
+  }
+
+  .child\:md\:text-lg>* {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .child\:md\:text-xs>* {
