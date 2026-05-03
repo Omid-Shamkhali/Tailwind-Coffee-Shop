@@ -200,6 +200,9 @@
     <symbol id="Plus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
         <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
       </symbol>
+      <symbol id="minus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+      </symbol>
       
       
       
@@ -591,8 +594,11 @@
                 </div>
                 <div class="flex m-5">
                     <div class="flex  justify-between items-center w-[104px] h-[32px] border-4 border-yellow-400 rounded-xl">
-                        <svg class="flex w-4 h-4 m-2 cursor-pointer">
+                        <svg class="trash-symbol flex w-4 h-4 m-2 cursor-pointer">
                             <use href="#Trash"></use>
+                          </svg>
+                          <svg class="minus-symbol flex w-4 h-4 m-2 cursor-pointer">
+                            <use href="#minus"></use>
                           </svg>
                           <span class="TotalProductNumber flex items-center justify-center w-[40px]">1</span>
                           <svg class="plus-number flex  w-4 h-4 m-2 cursor-pointer">
@@ -647,6 +653,7 @@
                         <svg class="flex  w-4 h-4 m-2 cursor-pointer">
                             <use href="#Trash"></use>
                           </svg>
+                          
                           <span class="TotalProductNumber flex items-center justify-center w-[40px]">1</span>
                           <svg class="plus-number flex w-4 h-4 m-2 cursor-pointer">
                             <use href="#Plus"></use>
