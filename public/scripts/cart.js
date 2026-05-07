@@ -56,19 +56,23 @@ document.addEventListener('DOMContentLoaded', () => {
  /* totalProductPriceInCart
   productPriceInCart  */
   document.addEventListener('DOMContentLoaded', () => { 
-    const products = document.querySelectorAll('.productCartHolder');
+    const perProductPriceInCart = document.querySelectorAll('.productPriceInCart');
     const totalProductPricesInCart = document.querySelectorAll('.totalProductPriceInCart');
   
     let total = 0;
   
-    products.forEach(product => {
-      const price = parseFloat(product.querySelector('.productPriceInCart').textContent);
-      const quantity = parseInt(product.querySelector('.TotalProductNumber').textContent);
-  
-      total += price * quantity;
+    perProductPriceInCart.forEach(price => {
+      let value = parseFloat(price.textContent);
+      total += value;
     });
+
+    totalProductPricesInCart.forEach(perTotal=>{
+        perTotal.textContent=total.toFixed(2);
+    })
   
-    totalProductPricesInCart.forEach(perTotal => {
-      perTotal.textContent = total.toFixed(2);
-    });
+   
   });
+
+
+ 
+  
