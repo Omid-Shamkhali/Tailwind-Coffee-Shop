@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         count++;
         totalProduct.textContent = count;
         pricePerProductByCount(container,count, value);
+        updateTotalPrice();
         if (count > 1) {
           trashIcon.style.display = 'none';
           minusSymbol.style.display = 'block';
@@ -68,11 +69,24 @@ document.addEventListener('DOMContentLoaded', () => {
         total.toFixed(2);
     });
   });
-
+// Update TOTAL PRICE
   function pricePerProductByCount(container, count, value){
     let basePriceInCart=container.querySelector('.basePrice');
     const priceElement =container.querySelector('.productPriceInCart');
     let total = count * basePriceInCart.textContent;
     priceElement.textContent = total.toFixed(2);
   
+  }
+
+  function updateTotalPrice(){
+    const perProductPriceInCart =document.querySelectorAll('.productPriceInCart');
+    const totalProductPricesInCart =document.querySelectorAll('.totalProductPriceInCart');
+    let total = 0;
+    perProductPriceInCart.forEach(price => {
+      let value =parseFloat(price.textContent);
+      total += value;
+    });
+    totalProductPricesInCart.forEach(perTotal => {
+      perTotal.textContent =total.toFixed(2);
+    });
   }
