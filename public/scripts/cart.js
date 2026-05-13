@@ -46,8 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   
     // DELETE PRODUCT
-    const trashIcons =
-      document.querySelectorAll('.trash-symbol');
+    const trashIcons =document.querySelectorAll('.trash-symbol');
       trashIcons.forEach(btn => {
       btn.addEventListener('click', () => {
       const product =btn.closest('.productCartHolder');
