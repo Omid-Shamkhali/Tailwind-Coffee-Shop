@@ -1204,6 +1204,18 @@ body.bodyHomeMobile{
   height: min-content;
 }
 
+.h-\[350px\] {
+  height: 350px;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-\[15px\] {
+  height: 15px;
+}
+
 .min-h-\[200px\] {
   min-height: 200px;
 }
@@ -1448,6 +1460,22 @@ body.bodyHomeMobile{
   width: 1px;
 }
 
+.w-\[600px\] {
+  width: 600px;
+}
+
+.w-\[1600px\] {
+  width: 1600px;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.w-\[50px\] {
+  width: 50px;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -1537,6 +1565,10 @@ body.bodyHomeMobile{
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-x-2 {
@@ -1865,6 +1897,16 @@ body.bodyHomeMobile{
   background-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
 }
 
+.bg-green-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 128 61 / var(--tw-bg-opacity, 1));
+}
+
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity, 1));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1985,6 +2027,11 @@ body.bodyHomeMobile{
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pb-1 {
@@ -2253,6 +2300,16 @@ body.bodyHomeMobile{
 .text-zinc-800 {
   --tw-text-opacity: 1;
   color: rgb(39 39 42 / var(--tw-text-opacity, 1));
+}
+
+.text-blue-700 {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity, 1));
+}
+
+.text-blue-900 {
+  --tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity, 1));
 }
 
 .opacity-0 {
@@ -2560,6 +2617,10 @@ body.bodyHomeMobile{
 
 .has-\[input\:focus-within\]\:outline-gray-600:has(input:focus-within) {
   outline-color: #4b5563;
+}
+
+.child\:m-5>* {
+  margin: 1.25rem;
 }
 
 .child\:mb-2>* {
