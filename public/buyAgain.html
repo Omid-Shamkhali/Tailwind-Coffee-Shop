@@ -25,7 +25,7 @@
         </ul>
         
       </nav>
-      <h3 class="text-[30px] text-white">Your Orders</h3>
+      <h3 class="text-[30px] text-white">Buy Again</h3>
       <!--Cart & Theme Toggle , Login Link-->
       <div class="flex gap-x-4 lg:gap-x-5 xl:gap-x-10 text-xl items-center text-orange-200">
         <!--Cart Icon & Theme Switch Btn-->
@@ -182,129 +182,32 @@
 
   <!---------------------start body--------------------------------------------------------------------------------->
   <div class="h-[150px]"></div>
-  <div class="container w-[424px] sm:w-[1360px] min-h-screen m-auto flex flex-col  z-10 ">
+  <div class="container w-[424px] sm:w-[1360px] min-h-screen m-auto flex flex-col  z-10 "> 
+    <div class="flex justify-between">
+    <h1 class="text-2xl">Buy Again</h1>
+    <div class="flex items-center gap-2">
+        <input type="search"name="search" placeholder="Search all orders" class="border rounded px-3 py-1  ">
+        <button class="flex w-[150px] items-center justify-center border px-4 py-1 bg-gray-900 text-white rounded-2xl hover:bg-gray-800">Search orders</button>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <div class="flex flex-col w-[230px] h-[279px] border-4 border-bule-950 mt-5">
+        
+        <div class="flex w-[228px] h-[180px] cursor-pointer"><img class="flex items-center justify-center" src="images/products/p1.png" alt="product image"></div>
+        <div class="flex flex-col child:ml-2 child:cursor-pointer">
+            <span>coffee full arabic</span>
+            <spaan>Temporarily out of stock</spaan>
+        </div>
+        <div class="flex">
+            <a class="flex items-center justify-center border border-gray-400 rounded-2xl w-full h-[30px] hover:bg-gray-200 m-2 " href="http://127.0.0.1:5500/public/product.html?id=1">See product details</a>
+        </div>
+        
+    </div>
+  </div>
     
 
-    <div class="flex w-full h-[50px] items-center justify-between">
-        <h1 class="text-xl font-semibold">Your Orders</h1>
-      
-        <div class="flex items-center gap-2">
-          <input type="search"name="search" placeholder="Search orders..." class="border rounded px-3 py-1 ">
-          <button class="flex w-[150px] items-center justify-center border px-4 py-1 bg-gray-900 text-white rounded-2xl hover:bg-gray-800">Search</button>
-        </div>
-       
-      </div>
-      <hr>
-      <br>
-      <div class="flex flex-col w-full h-[200px] border border-gray-300 rounded-md overflow-hidden">
-        <div class="flex w-full h-[100px] bg-gray-200 child:m-5 justify-between ">
-            <div class="flex">
-            <div class="flex flex-col ml-5">
-                <span>ORDER PLACED</span>
-                <span>1 December 2024</span>
-            </div>
-            <div class="flex flex-col ml-5">
-                <span>TOTAL</span>
-                <span>59.63 </span>
-                
-            </div>
-
-            <div class="flex flex-col ml-5">
-                <span>DISPATCH TO</span>
-                <span class="text-blue-900 hover:underline">Omid </span>
-                
-            </div>
-            </div>
-
-            <div class="flex">
-                <div class="flex-col">
-                    <span>ORDER # 028-5160185-0679510</span>
-                    <div class="flex">
-                        <a class="cursor-pointer text-blue-900 hover:underline">View order details</a>
-                        <a class="ml-5 cursor-pointer text-blue-900 hover:underline"> Invoice</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flex justify-between">
-        <div class="flex">
-            <div class="flex w-20 h-20 m-5">
-                <img src="images/coffe3.webp" alt="">
-            </div>
-            <div class="flex flex-col m-5">
-                <a href="#" class="ml-5 text-blue-900 hover:underline">coffee 2x arabic </a>
-                <div class="flex m-5">
-                    <a class="flex items-center justify-center border border-gray-400 rounded-md w-[120px] h-[30px] hover:bg-gray-200 " href="buyAgain.html">Buy it again</a>
-                    <a class="flex items-center justify-center border border-gray-400 rounded-md w-[120px] h-[30px] hover:bg-gray-200 ml-5" href="buyAgain.html">View Your Item</a>
-                </div>
-            </div>
-            
-        </div>
-
-        <div class="flex">
-            <div class="flex m-5">
-                <a class="flex border border-gray-400 rounded-md w-[200px] h-[30px] items-center justify-center hover:bg-gray-200" href="#">Write a product review</a>
-                
-            </div>
-        </div>
-    </div>
-
-      </div>
-      <br>
-      <div class="flex flex-col w-full h-[200px] border border-gray-300 rounded-md overflow-hidden">
-        <div class="flex w-full h-[100px] bg-gray-200 child:m-5 justify-between ">
-            <div class="flex">
-            <div class="flex flex-col ml-5">
-                <span>ORDER PLACED</span>
-                <span>2 Juli 2025</span>
-            </div>
-            <div class="flex flex-col ml-5">
-                <span>TOTAL</span>
-                <span>22.99 </span>
-                
-            </div>
-
-            <div class="flex flex-col ml-5">
-                <span>DISPATCH TO</span>
-                <span class="text-blue-900 hover:underline">Omid </span>
-                
-            </div>
-            </div>
-
-            <div class="flex">
-                <div class="flex-col">
-                    <span>ORDER # 028-4266183-0689835</span>
-                    <div class="flex">
-                        <a class="cursor-pointer text-blue-900 hover:underline">View order details</a>
-                        <a class="ml-5 cursor-pointer text-blue-900 hover:underline"> Invoice</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flex justify-between">
-        <div class="flex">
-            <div class="flex w-20 h-20 m-5">
-                <img src="images/coffee4.webp" alt="">
-            </div>
-            <div class="flex flex-col m-5">
-                <a href="#" class="ml-5 text-blue-900 hover:underline">coffee full arabic </a>
-                <div class="flex m-5">
-                    <a class="flex items-center justify-center border border-gray-400 rounded-md w-[120px] h-[30px] hover:bg-gray-200 " href="#">Buy it again</a>
-                    <a class="flex items-center justify-center border border-gray-400 rounded-md w-[120px] h-[30px] hover:bg-gray-200 ml-5" href="#">View Your Item</a>
-                </div>
-            </div>
-            
-        </div>
-
-        <div class="flex">
-            <div class="flex m-5">
-                <a class="flex border border-gray-400 rounded-md w-[200px] h-[30px] items-center justify-center hover:bg-gray-200" href="#">Write a product review</a>
-                
-            </div>
-        </div>
-    </div>
-
-      </div>
+   
    
    
 
