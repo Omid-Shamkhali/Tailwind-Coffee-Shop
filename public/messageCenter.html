@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoffeShop</title>
+  <link rel="stylesheet" href="./styles/app.css">
+  <link rel="icon" href="images/fav-icon.png" type="image/png">
+</head>
+<body class="checkoutPage font-Dana bg-gray-100 dark:bg-zinc-800 ">
+  <!-------------------------------------------------------------------------------------------------------------->
+  <header class="fixed hidden md:flex top-9 right-0 left-0 items-center bg-black/50 w-[98%] lg:w-[90%] h-24 px-5 lg:px-10 py-5 mx-auto rounded-3xl backdrop-blur-[6px] z-20">
+    <div class="flex w-full justify-between items-center">
+      <!--Logo & Menu-->
+      <nav class="flex gap-x-5 lg:gap-x-9 items-center h-14">
+        <!--Logo-->
+        <div class="shrink-0">
+          <img src="images/app-logo.png" alt="Golden Coffe">
+        </div>
+        <!--Menu-->
+        <ul class="flex gap-x-5 lg:gap-x-9 text-base md:text-xl text-gray-300 tracking-tightest h-full child:leading-[56px]">
+          <li class="font-DanaMedium text-orange-200">
+            <a href="index.html">Home</a>
+          </li>
+        </ul>
+        
+      </nav>
+      <h3 class="text-[30px] text-white">Message Center</h3>
+      <!--Cart & Theme Toggle , Login Link-->
+      <div class="flex gap-x-4 lg:gap-x-5 xl:gap-x-10 text-xl items-center text-orange-200">
+        <!--Cart Icon & Theme Switch Btn-->
+        <div class="flex items-center gap-x-2 lg:gap-x-5">
+          <!-- Cart -->
+          <div class="relative group">
+            <!-- Cart Icon hover-->
+            <div class="py-3 cursor-pointer">
+              <a href="cart.html">
+              <svg class="w-7 h-7">
+                <use xlink:href="#shopping-cart"></use>
+              </svg>
+              </a> 
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-------------------------------------------------------------------------------------------------------------->
+
+  <div
+    class="fixed top-0 right-0 left-0 items-center flex md:hidden bg-white dark:bg-zinc-700 px-4 justify-between h-16">
+    <!-- Nav icon-->
+    <div>
+    
+    </div>
+    <!-- Nav (mobile menu)-->
+ 
+    <div id="mobile-menu" class="fixed top-0 bottom-0 -left-64 w-64 min-h-screen bg-white dark:bg-zinc-700 pt-3 px-4 transition-all overflow-y-auto z-[9999]">
+      <!-- Nav Header (logo menu mobile)-->
+      <div class="flex justify-between pb-5 mb-6 items-center border-b border-b-gray-100 dark:border-b-white/10">
+        <div class="flex">
+          <svg class="w-[60px] h-10">
+            <use href="#logo"></use>
+          </svg>
+          <svg class="w-[100px] h-10">
+            <use href="#app-logo-type"></use>
+          </svg>
+        </div>
+        <!--X icon-->
+        <svg class=" close-menu w-5 h-5 text-zinc-600 dark:text-white">
+          <use href="#x-mark"></use>
+        </svg>
+      </div>
+      <!--  Nav Menu (mobile nav menus)-->
+      <div class="flex h-10 items-center text-orange-300 bg-orange-200/20 rounded-md pl-2.5 mb-4">
+        <a href="#" class="flex items-center gap-x-2 text-orange-300">
+          <svg class="w-5 h-5">
+            <use href="#home"></use>
+          </svg>
+          Home
+        </a>
+      </div>
+      <ul class="space-y-6 text-zinc-600 dark:text-white child:pl-2.5 ">
+        <!--has Sub-->
+        <li>
+          <div class="flex justify-between items-center">
+            <a href="#" class="flex items-center gap-x-2">
+              <svg class="w-4 h-4">
+                <use href="#shopping-bag"></use>
+              </svg>
+              Shop
+            </a>
+            <span>
+              <svg id="submenu-btn" class="w-4 h-4 cursor-pointer rotate-180">
+                <use href="#chevron-down"></use>
+              </svg>
+            </span>
+          </div>
+          <!--Sub Menu-->
+          <div class="submenu hidden">
+            <a href="#">Special coffee</a>
+            <a href="#">Specially at the global level</a>
+            <a href="#">First class coffee</a>
+            <a href="#">Commercial compounds</a>
+            <a href="#">Coffee capsule</a>
+            <a href="#">Brazilian Zino Coffee</a>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="flex items-center gap-x-2">
+            <svg class="w-5 h-5">
+              <use href="#chat"></use>
+            </svg>
+            Dictionary
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center gap-x-2">
+            <svg class="w-5 h-5">
+              <use href="#document-text"></use>
+            </svg>
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="aboutUs.html" class="flex items-center gap-x-2">
+            <svg class="w-5 h-5">
+              <use href="#about"></use>
+            </svg>
+            About us
+          </a>
+        </li>
+        <li>
+          <a href="contact.html" class="flex items-center gap-x-2">
+            <svg class="w-5 h-5">
+              <use href="#phone"></use>
+            </svg>
+            Contact us
+          </a>
+        </li>
+      </ul>
+      <div
+        class="flex flex-col items-start gap-y-6 pt-8 mt-8 px-2.5 border-b border-b-gray-100 dark:border-b-white/10 text-orange-300 space-y-6 py-8">
+        <!--NAV footer mobile-->
+        <a h ref="#" class="inline-flex items-center gap-x-2 cursor-pointer">
+          <svg class="w-5 h-5 rotate-180">
+            <use xlink:href="#Arrow"></use>
+          </svg>
+          Registration | login
+        </a>
+        <span class="flex items-center gap-x-2">
+          <svg class="w-5 h-5 inline-block dark:hidden">
+            <use xlink:href="#Moon"></use>
+          </svg>
+          <svg class="w-5 h-5 hidden dark:inline-block">
+            <use xlink:href="#Sun"></use>
+          </svg>
+          <div class="toggle-theme">
+            <span class="inline-block dark:hidden">Dark Theme</span>
+            <span class="hidden dark:inline-block">Light Theme</span>
+          </div>
+        </span>
+        <a href="#" class="inline-flex items-center gap-x-2">
+          <svg class="w-5 h-5 ">
+            <use xlink:href="#shopping-cart"></use>
+          </svg>
+          Basket
+        </a>
+      </div>
+    </div>
+    <!--  Logo type-->
+    <div>
+        <h3 class="text-[20px]">Blog</h3>
+    </div>
+    <!-- Cart icon-->
+    <div>
+      <svg class="mobile-shopping-cart w-6 h-6 mt-3 text-zinc-700 dark:text-white">
+        <use href="#shopping-cart"></use>
+      </svg>
+    </div>
+  </div>
+
+  <!---------------------start body--------------------------------------------------------------------------------->
+  <div class="h-[200px]"></div>
+  <div class="container w-[424px] sm:w-[1360px] min-h-screen m-auto flex flex-col z-10">
+    <div class="flex items-center justify-between">
+        <h1 class="text-2xl">Message Center</h1>
+        <div class="flex">
+            <div class="flex items-center">
+                <label class="mb-1 text-sm font-medium">From</label>
+                <input type="date"class="border border-gray-300 rounded-lg px-3 py-2 ml-2"/>
+              </div>
+            
+              <div class="flex items-center ml-2">
+                <label class="mb-1 text-sm font-medium">To</label>
+                <input type="date" class="border border-gray-300 rounded-lg px-3 py-2 ml-2"/>
+              </div>
+            
+              <a class="flex border border-gray-400 rounded-md w-[100px] h-[30px] items-center justify-center hover:bg-gray-200 ml-2 mt-1" href="#">Filter</a>
+        </div>
+    </div>
+    
+    <div class="flex flex-col mt-5 max-w-[980px] child:text-[#0f111] mx-auto mb-6 ">
+        <div class="flex flex-col w-[900px] h-[full] border-2 border-gray-700 border-spacing-1 rounded-md items-center justify-center">
+            <div class="flex justify-between w-full h-[100px] border-b cursor-pointer hover:bg-gray-200">
+                <div class="flex">
+                    <div class="flex w-10 h-10 m-5">
+                        <img src="images/app-logo.png" alt="app-logo">
+                    </div>
+                    <div class="flex flex-col m-5">
+                    <span class="text-gray-400">coffee@gmail.com</span>
+                    <span>We found something you might like</span>
+                </div>
+                </div>
+                <span class="flex m-5 text-gray-400">7 Jun 2024</span>
+                
+            </div>
+
+            <div class="flex justify-between w-full h-[100px] border-b cursor-pointer hover:bg-gray-200">
+                <div class="flex">
+                    <div class="flex w-10 h-10 m-5">
+                        <img src="images/app-logo.png" alt="app-logo">
+                    </div>
+                    <div class="flex flex-col m-5">
+                    <span class="text-gray-400">coffee@gmail.com</span>
+                    <span>We found something you might like</span>
+                </div>
+                </div>
+                <span class="flex m-5 text-gray-400">22 April 2024</span>
+                
+            </div>
+
+            <div class="flex justify-between w-full h-[100px] border-b cursor-pointer hover:bg-gray-200">
+                <div class="flex">
+                    <div class="flex w-10 h-10 m-5">
+                        <img src="images/app-logo.png" alt="app-logo">
+                    </div>
+                    <div class="flex flex-col m-5">
+                    <span class="text-gray-400">coffee@gmail.com</span>
+                    <span>We found something you might like</span>
+                </div>
+                </div>
+                <span class="flex m-5 text-gray-400">16 May 2024</span>
+                
+            </div>
+
+            <div class="flex justify-between w-full h-[100px] border-b cursor-pointer hover:bg-gray-200">
+                <div class="flex">
+                    <div class="flex w-10 h-10 m-5">
+                        <img src="images/app-logo.png" alt="app-logo">
+                    </div>
+                    <div class="flex flex-col m-5">
+                    <span class="text-gray-400">coffee@gmail.com</span>
+                    <span>We found something you might like</span>
+                </div>
+                </div>
+                <span class="flex m-5 text-gray-400">8 Juli 2024</span>
+                
+            </div>
+
+            <div class="flex justify-between w-full h-[100px] border-b cursor-pointer hover:bg-gray-200">
+                <div class="flex">
+                    <div class="flex w-10 h-10 m-5">
+                        <img src="images/app-logo.png" alt="app-logo">
+                    </div>
+                    <div class="flex flex-col m-5">
+                    <span class="text-gray-400">coffee@gmail.com</span>
+                    <span>We found something you might like</span>
+                </div>
+                </div>
+                <span class="flex m-5 text-gray-400">12 Aqust 2024</span>
+                
+            </div>
+
+            <div class="flex justify-between w-full h-[100px] border-b cursor-pointer hover:bg-gray-200">
+                <div class="flex">
+                    <div class="flex w-10 h-10 m-5">
+                        <img src="images/app-logo.png" alt="app-logo">
+                    </div>
+                    <div class="flex flex-col m-5">
+                    <span class="text-gray-400">coffee@gmail.com</span>
+                    <span>We found something you might like</span>
+                </div>
+                </div>
+                <span class="flex m-5 text-gray-400">25 December 2024</span>
+                
+            </div>
+
+            <div class="flex justify-between w-full h-[100px] border-b cursor-pointer hover:bg-gray-200">
+                <div class="flex">
+                    <div class="flex w-10 h-10 m-5">
+                        <img src="images/app-logo.png" alt="app-logo">
+                    </div>
+                    <div class="flex flex-col m-5">
+                    <span class="text-gray-400">coffee@gmail.com</span>
+                    <span>We found something you might like</span>
+                </div>
+                </div>
+                <span class="flex m-5 text-gray-400">9 Juli 2024</span>
+                
+            </div>
+
+            <div class="flex justify-between w-full h-[100px] border-b cursor-pointer hover:bg-gray-200">
+                <div class="flex">
+                    <div class="flex w-10 h-10 m-5">
+                        <img src="images/app-logo.png" alt="app-logo">
+                    </div>
+                    <div class="flex flex-col m-5">
+                    <span class="text-gray-400">coffee@gmail.com</span>
+                    <span>We found something you might like</span>
+                </div>
+                </div>
+                <span class="flex m-5 text-gray-400">19 Jun 2024</span>
+                
+            </div>
+
+           
+        </div>
+    </div>
+
+ 
+   <!----------------------------------------------------------------------------------------------------------------------->
+    </div><!--End Container Tag-->
+  </div><!--End Body-->
+   <!-----------------------------------------------Footer------------------------------------------------------------------------>
+   <footer class="relative bg-gray-800 text-white py-12 z-10">
+    <div class="flex justify-center items-center child:ml-5 child:text-gray-300 child:text-xs mb-5 child:cursor-pointer">
+        <a href="#" class="hover:underline">Conditions of Use & Sale</a>
+        <a href="#" class="hover:underline">Privacy Notice</a>
+        <a href="#" class="hover:underline">Imprint</a>
+        <a href="#" class="hover:underline">Cookies Notice</a>
+        <a href="#" class="hover:underline">Interest-Based Ads Notice</a>
+    </div>
+    <div class="border-t border-t-white/10 gap-8 px-6"></div>
+    <div class="flex justify-between m-5 ml-10 child:text-gray-400">
+       <span>Copyright</span>
+       <span>© 1996-2026, Github, Inc. or its affiliates</span>
+    </div>
+  </footer>
+    <!----------------------------------------------------------------------------------------------------------------------->
+  <div class="overlay hidden fixed inset-0 w-full h-full  bg-black/40 z-10 md:hidden transition-all"></div>
+  <script src="scripts/app.js"></script>
+</body>
+
+</html>
+
+</html>
