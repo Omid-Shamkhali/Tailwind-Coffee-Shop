@@ -1215,6 +1215,10 @@ body.bodyHomeMobile{
   height: 94px;
 }
 
+.h-\[full\] {
+  height: full;
+}
+
 .h-full {
   height: 100%;
 }
@@ -1222,10 +1226,6 @@ body.bodyHomeMobile{
 .h-min {
   height: -moz-min-content;
   height: min-content;
-}
-
-.h-\[full\] {
-  height: full;
 }
 
 .min-h-\[200px\] {
@@ -1468,6 +1468,10 @@ body.bodyHomeMobile{
   width: 896px;
 }
 
+.w-\[900px\] {
+  width: 900px;
+}
+
 .w-\[98\%\] {
   width: 98%;
 }
@@ -1488,22 +1492,6 @@ body.bodyHomeMobile{
   width: 1px;
 }
 
-.w-\[full\] {
-  width: full;
-}
-
-.w-\[700px\] {
-  width: 700px;
-}
-
-.w-\[1360px\] {
-  width: 1360px;
-}
-
-.w-\[900px\] {
-  width: 900px;
-}
-
 .min-w-0 {
   min-width: 0px;
 }
@@ -1512,20 +1500,16 @@ body.bodyHomeMobile{
   max-width: 700px;
 }
 
+.max-w-\[980px\] {
+  max-width: 980px;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-\[900px\] {
-  max-width: 900px;
-}
-
-.max-w-\[980px\] {
-  max-width: 980px;
 }
 
 .shrink-0 {
@@ -1719,12 +1703,12 @@ body.bodyHomeMobile{
   border-width: 1px;
 }
 
-.border-4 {
-  border-width: 4px;
-}
-
 .border-2 {
   border-width: 2px;
+}
+
+.border-4 {
+  border-width: 4px;
 }
 
 .border-b {
@@ -1755,6 +1739,10 @@ body.bodyHomeMobile{
   border-top-width: 3px;
 }
 
+.border-dashed {
+  border-style: dashed;
+}
+
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
@@ -1770,6 +1758,11 @@ body.bodyHomeMobile{
   border-color: rgb(156 163 175 / var(--tw-border-opacity, 1));
 }
 
+.border-gray-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
+}
+
 .border-orange-200 {
   --tw-border-opacity: 1;
   border-color: rgb(254 215 170 / var(--tw-border-opacity, 1));
@@ -1783,21 +1776,6 @@ body.bodyHomeMobile{
 .border-yellow-400 {
   --tw-border-opacity: 1;
   border-color: rgb(250 204 21 / var(--tw-border-opacity, 1));
-}
-
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
-}
-
-.border-gray-800 {
-  --tw-border-opacity: 1;
-  border-color: rgb(31 41 55 / var(--tw-border-opacity, 1));
-}
-
-.border-gray-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
 }
 
 .border-b-gray-100 {
@@ -2412,10 +2390,6 @@ body.bodyHomeMobile{
 
 .outline-gray-300 {
   outline-color: #d1d5db;
-}
-
-.filter {
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .backdrop-blur-\[6px\] {

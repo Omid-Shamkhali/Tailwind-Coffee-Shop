@@ -7,7 +7,13 @@
   <link rel="stylesheet" href="./styles/app.css">
   <link rel="icon" href="images/fav-icon.png" type="image/png">
 </head>
-<body class="checkoutPage font-Dana bg-[#007185] dark:bg-zinc-800 ">
+<body class="checkoutPage font-Dana bg-gray-100 dark:bg-zinc-800 ">
+    <svg class="hidden">
+        <symbol xmlns="http://www.w3.org/2000/svg" id="plus" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+        </symbol>
+          
+    </svg>
   <!-------------------------------------------------------------------------------------------------------------->
   <header class="fixed hidden md:flex top-9 right-0 left-0 items-center bg-black/50 w-[98%] lg:w-[90%] h-24 px-5 lg:px-10 py-5 mx-auto rounded-3xl backdrop-blur-[6px] z-20">
     <div class="flex w-full justify-between items-center">
@@ -25,7 +31,7 @@
         </ul>
         
       </nav>
-      <h3 class="text-[30px] text-white">Contact-Us</h3>
+      <h3 class="text-[30px] text-white">Message Center</h3>
       <!--Cart & Theme Toggle , Login Link-->
       <div class="flex gap-x-4 lg:gap-x-5 xl:gap-x-10 text-xl items-center text-orange-200">
         <!--Cart Icon & Theme Switch Btn-->
@@ -170,7 +176,7 @@
     </div>
     <!--  Logo type-->
     <div>
-        <h3 class="text-[20px]">Login</h3>
+        <h3 class="text-[20px]">Blog</h3>
     </div>
     <!-- Cart icon-->
     <div>
@@ -181,92 +187,26 @@
   </div>
 
   <!---------------------start body--------------------------------------------------------------------------------->
-  <div class="h-[150px]"></div>
-  <div class="container w-[424px] sm:w-[1360px] min-h-screen m-auto flex flex-col  z-10 bg-[#007185]">
-    
-
-    <div class="flex w-full  items-center justify-between m-10  ">
-        <div class="flex flex-col child:text-white child:text-2xl  ">
-        <h1 class="text-xl font-semibold">Do you need help with a recent item, Omid?</h1>
-        <h1 class="text-xl font-semibold ">Select the item you need help with below or get help with something else.</h1>
+  <div class="h-[200px]"></div>
+  <div class="container w-[424px] sm:w-[1360px] min-h-screen m-auto flex flex-col z-10">
+    <div class="flex items-center justify-between">
+        <h1 class="text-2xl mb-5">Your Addresses</h1>
+        
+           
        </div>
-      </div>
-      <div class="flex flex-wrap child:cursor-pointer">
-      <div class="flex w-[380px] h-[94px] border bg-white m-5 rounded-md hover:bg-gray-100">
-        <div class="flex m-5">
-            <img src="images/products/p1.png" alt="product-p1">
-            <div class="flex flex-col">
-                <span class="text-lg">coffe full arabic </span>
-                <span class="text-gray-500">Ordered on 1 Dec 2024</span>
-            </div>
-        </div>
-       
-      </div>
-
-      <div class="flex w-[380px] h-[94px] border bg-white m-5 rounded-md hover:bg-gray-100">
-        <div class="flex m-5">
-            <img src="images/products/p2.png" alt="product-p2">
-            <div class="flex flex-col">
-                <span class="text-lg">coffe full arabic </span>
-                <span class="text-gray-500">Ordered on 26 Dec 2024</span>
-            </div>
-        </div>
-       
-      </div>
-
-      <div class="flex w-[380px] h-[94px] border bg-white m-5 rounded-md hover:bg-gray-100">
-        <div class="flex m-5">
-            <img src="images/products/p3.png" alt="product-p3">
-            <div class="flex flex-col">
-                <span class="text-lg">coffe full arabic </span>
-                <span class="text-gray-500">Ordered on 5 octobr 2024</span>
-            </div>
-        </div>
-       
-      </div>
-
-      <div class="flex w-[380px] h-[94px] border bg-white m-5 rounded-md hover:bg-gray-100">
-        <div class="flex m-5">
-            <img src="images/products/p2.png" alt="product-p2">
-            <div class="flex flex-col">
-                <span class="text-lg">coffe full arabic </span>
-                <span class="text-gray-500">Ordered on 5 octobr 2024</span>
-            </div>
-        </div>
-       
-      </div>
-
-      <div class="flex w-[380px] h-[94px] border bg-white m-5 rounded-md hover:bg-gray-100">
-        <div class="flex m-5">
-            <img src="images/products/p3.png" alt="product-p3">
-            <div class="flex flex-col">
-                <span class="text-lg">coffe full arabic </span>
-                <span class="text-gray-500">Ordered on 5 octobr 2024</span>
-            </div>
-        </div>
-       
-      </div>
-
-
-      <div class="flex w-[380px] h-[94px] border bg-white m-5 rounded-md hover:bg-gray-100">
-        <div class="flex m-5">
-            <img src="images/products/p4.png" alt="product-p4">
-            <div class="flex flex-col">
-                <span class="text-lg">coffe full arabic </span>
-                <span class="text-gray-500">Ordered on 8 Jun 2025</span>
-            </div>
-        </div>
-       
-      </div>
-
-    </div>
-    <div class="flex flex-col child:bg-white m-5">
-    <a class="flex border border-gray-400 rounded-md w-[200px] h-[30px] items-center justify-center hover:bg-gray-200 " href="#">Help with a different item</a>
-    <br>
-    <a class="flex border border-gray-400 rounded-md w-[200px] h-[30px] items-center justify-center hover:bg-gray-200" href="#">Help with something else</a>
-</div>
-     
+       <div class="w-[400px] h-[300px] border-2 border-dashed border-gray-400 rounded-lg flex flex-col items-center justify-center gap-2 cursor-pointer">
+  
+        <svg class="w-8 h-8 text-gray-300">
+          <use xlink:href="#plus"></use>
+        </svg>
       
+        <span>Add Address</span>
+      
+      </div>
+      
+    </div>
+
+ 
    <!----------------------------------------------------------------------------------------------------------------------->
     </div><!--End Container Tag-->
   </div><!--End Body-->
@@ -292,4 +232,3 @@
 
 </html>
 
-</html>
